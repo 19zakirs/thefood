@@ -1,0 +1,2291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="shortcut icon" type="image/png" href="image/logobro.png">
+     <!-- -------------------googleCSS----------------------------->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;500;600&family=Roboto+Condensed:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:wght@100&family=Ms+Madi&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+    <!-- -------------------googleCSS----------------------------->
+
+
+    
+
+    <!-- -------------------EXTERNALCSS----------------------------->
+   <link rel="stylesheet" href="css/about.css">
+   <link rel="stylesheet" href="css/bootstraps.css">
+   <link rel="stylesheet" href="css/index.css">
+    <!-- -------------------EXTERNALCSS----------------------------->
+    
+    <title>FOOD DIARIES</title>
+  
+  <!-- -------------------inpageCSS----------------------------->
+    <style>
+       
+
+  
+  .navbar34{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar34.sticky{
+    background:  linear-gradient( rgba(0, 0, 0, 0.921),rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.3)) ;
+    padding: 15px 0;
+    height: 90px;
+    z-index: 4;
+  }
+
+  .navbar34.sticky .logo img{
+      width: 90px;
+      height: 90px;
+      transition: 0.5s;
+  }
+  .navbar34.sticky .menu-list li a {
+    font-size: 15px;
+-webkit-text-stroke: 0.4px black;
+text-shadow: 2px 2px 10px rgb(0, 0, 0);
+padding: 0 8px;
+  }
+  .navbar34.sticky  button{
+    font-size: 11px;
+  }
+
+  .navbar34.sticky #search-icon {
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+ 
+  .navbar34.sticky #shopping{
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+
+  .navbar34.sticky #user{
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+
+
+
+  .navbar34 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar34 .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+
+  .navbar34 .menu-list{
+    display: inline-flex;
+    margin-top: 43px;
+    
+    
+  }
+
+  
+  .menu-list li{
+    list-style: none;
+    margin-top: -12px;
+
+  }
+  
+  .menu-list li a:hover{
+    color: var(--main-color);
+  }
+  @media (max-width: 1024px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar34 .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 50%;
+      max-width: 700px;
+      left: -100%;
+      top: 7px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: var(--body-bg);
+      transition: all 0.3s ease;
+      transform: translate(0px,-50px);
+
+    }
+  
+
+
+    .navbar34.show .menu-list{
+      left: 0%;
+      display: grid;
+      
+    }
+    .navbar34 .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar34 .menu-list li a{
+      font-size: 18px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-top: -100px;
+
+    }
+    .navbar34.show .menu-list li a{
+      margin-left: 0px;
+    }
+    .navbar34 .menu-list .dropdown-toggle{
+      font-size: 18px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-top: 45px;
+      margin-bottom: -40px;
+
+    }
+    .navbar34.show .menu-list .dropdown-toggle{
+      margin-left: 0px;
+    }
+  
+
+     .dropdown-menu{
+      background: black;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar34 .logo a{
+      font-size: 27px;
+    }
+  }
+  
+.back-video{
+    position: relative;
+    object-fit: cover;
+   
+}
+ 
+.tontona11:hover{
+  background: transparent;
+  color: var(--main-color);
+}
+.navbar34.sticky .tontona11{
+  font-size: 15px;
+}
+.tontona11{
+  background:transparent;color: #fff; transform:translateY(-24px)translateX(10px);font-size:16px; font-family: 'Libre Baskerville', serif;  -webkit-text-stroke: .2px black;
+        text-shadow: 2px 2px 8px rgb(0, 0, 0); 
+}
+
+    </style>
+  <!-- -------------------inpageCSS------------------------------>
+    
+    
+  </head>
+  <body>
+   <!-- <div class="loader-container">
+      <img src="dammoimage/image_processing20200705-25128-1a0u0wj.gif" alt="" style="transform:scale(1.5);">
+    </div>   -->
+  <div class="agedetextors" id="agedetextors">
+<!-- __________________________________________________________________________________________________________________ -->
+<header>
+<nav class="navbar34">
+  <div class="content">
+    <a href="index.html">
+      <div class="logo">
+        <img src="image/logobro.png" alt="">
+      </div>
+    </a>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fas fa-times" ></i>
+      </div>
+  
+      <li><a href="index.html" class="activenavbar">HOME</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="adout.html">ABOUT US</a></li>
+      <li><a href="chef.html">CHEFS</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle tontona11" type="button" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          RESTUARANT
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="foodmard.html">FOOD MART</a>
+          <a class="dropdown-item" href="blog.html">BLOGS</a>
+          <a class="dropdown-item" href="recipies.html">RECIPIES</a>
+          <a class="dropdown-item" href="tablebook.html">BOOK A TABLE</a>
+          <a class="dropdown-item" href="reviews.html">REVIEWS</a>
+        </div>
+      </div>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div class="icons">
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <i class="fas fa-search" id="search-icon">
+        
+      </i>
+      <div class="line"></div>
+      <a href="contact.html" class="fas fa-phone" id="shopping">
+        
+      </a>
+      <div class="line"></div>
+      <a id="user" class="fas fa-user" onclick="toggleMenu(),initClock()"></a>
+  </div>
+  </div>
+ 
+
+  
+  <!-- <div class="profile-images-card">
+    <div class="profile-images" id="pic1">
+      <img src="image/profile.png"  id="upload-img" onclick="toggleMenu()">
+    </div>
+    <div class="custom-file">
+      <input type="file" id="fileupload">
+    </div>
+  </div> -->
+
+  <div class="sub-menu-wrap" id="subMenu">
+
+
+    <div class="sub-menu"  id="subMenu2">
+
+
+      <div class="user-info" style="width: 57px;">
+
+
+   
+        <div class="profile-images-card">
+         
+           <div class="profile-images" id="pic2" style="margin-left: 6px; width: 60px; height: 60px;">
+         
+             <img src="image/profile.png" id="upload-img" onclick="toggleMenu()">
+              
+      </div>
+                 
+   
+                 <div class="custom-file" style="  margin-left: 10px;
+       transform: translateY(20px);">
+       
+               <!-- <label for="fileupload">Upload Profile</label> -->
+           
+           <input type="file" id="fileupload">
+           
+         </div>
+           
+       </div>
+       <div style="position: relative;float: right;text-align: center;/*! margin-left: 33px; *//*! padding-right: 11px; */">
+        <h2 style="position: relative;margin-left: 9px;height: 31px;;text-align: center;">
+
+          <span id="result-name" style="font-size: 36px;font-weight: 500;letter-spacing: 1px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></span>
+        </h2>
+    
+        <h2 style="text-align:center;margin-left: 8px;">
+          <span id="result-email" style="font-size:13px;"></span>
+        </h2>
+    
+    </div>
+       </div>
+      <hr style="margin-top: 18px;"> 
+
+      <a href="#" class="sub-menu-links">
+        <img src="image/sprofile.png" >
+        <p><label for="fileupload" id="upload" class="uploadop"> Upload Profile <i class="bi bi-cloud-plus" style="font-size:26px; margin-left: 38px;"></i></label></p>
+  
+      </a>
+      
+      <a href="#" class="sub-menu-links">
+        <img src="image/Project_21-removebg-preview.png" height="43px" style="width: 58px;" width="44px">
+        <p>Visitors</p>
+
+        <div class="website-counter" style="font-size: 16px;color: var(--hover-color);transform: translate(-12px,-4px);font-family: initial;font-weight: bolder;"> </div>
+       
+      </a>
+ 
+      <a href="#" class="sub-menu-links">
+        <img src="image/Project_20_1_-removebg-preview.png" height="40px">
+        <p>Time</p>    
+        <div class="website-counter" style="font-size: 16px;color: var(--hover-color);transform: translate(-5px,-4px);font-family: initial;font-weight: bolder;"></div>
+         
+            
+      </a>
+      <div class="datetime" style="margin-bottom: -95px;">
+        <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>,
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>,
+        </div>
+        <div class="time">
+            <span id="hour">00</span><span style="font-size: 20px; transform: translateY(-4px);">:</span>
+            <span id="minutes">00</span><span style="font-size: 20px; transform: translateY(-4px);">:</span>
+            <span id="second">00</span>
+            <span id="period" >AM</span>
+        </div>   
+    
+      </div>
+      <a  class="sub-menu-links">
+        <img src="dammoimage/Project_26_1_-removebg-preview.png" >
+        <p>Change Theme<label class="darkswitch">
+          <i class="bi bi-arrow-down-square-fill" style="font-size:26px;"  onclick="themeopen()"></i>
+         
+        </label></p>
+      
+      </a> 
+
+     <a href="login.html" class="sub-menu-links" onclick="blocknone2(),addremove()">
+        <img src="image/logout.png" >
+        <p>Logout <i class="bi bi-box-arrow-left" style="font-size:26px; margin-left: 96px;"></i></p>
+      
+      </a> 
+      
+ 
+
+      
+
+
+      </div>
+    </div>
+ 
+</nav>
+
+</header>
+<form action="" id="search-form">
+  <input type="search" placeholder="search here..." name="" id="search-box">
+  <label for="search-box" class="fas fa-search">
+  </label>
+  
+  <i class="fas fa-times" id="close"></i>
+  
+</form>
+<!-- 
+  __________________________________________________________________________________________________________________ -->
+  
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+
+              
+              <div class="carousel-item active" style="transition: 0.5s;">
+                <img class="d-block w-100 hey" src="image/bannerbro2.jpg" alt="Second slide">
+                <div class="carousel-caption  d-md-block" >
+                  <h5><h3 style="font-weight:700; color: var(--main-color); -webkit-text-stroke: black .9px; transform: translateY(13px);font-size: 20px;">RESTUARANT</h3><div class="text-boxindexbanner">      
+                    <h1>Made Special For U </h1>
+                    <p style="color: rgb(234, 232, 232); text-shadow: 2px 2px 10px black; font-weight: 200;font-family: poppins , sans-serif;">Your diet is a bank account good food choices are investment Food is for eating and good food is to be enjoyed.I think food is actually very beautiful in itself.</p>
+                </div></h5>
+                  <p class="salabanner">
+                    <div class="wrapperINDEXBANNER">
+                      <div class="static-txtindebanner" >OUR RESTUARANT HAVE GOOD</div>
+                        <ul class="dynamic-txtsindebanner">
+                          <li><span>SERVICE</span></li>
+                          <li><span>QUALITY</span></li>
+                          <li><span>STAFF</span></li>
+                          <li><span>CHEFS</span></li>
+                        </ul>
+                        <span>  
+                        <div>
+                            <br><br>
+                          <button class="buttunindes">MAKE RESERVATION</button>
+                      
+                        </div>
+                    </span>
+                     </div>
+                  </p>
+                </div>
+              </div>
+                <div class="carousel-item " style="transition: 0.5s;">
+             
+                  <img class="d-block w-100 hey" src=" image/bannerbro.jpg" alt="First slide" style="transition: 0.5s;">
+               
+                  <div class="carousel-caption  d-md-block" >
+                    <h5><h3 style="font-weight:700; color: var(--main-color); -webkit-text-stroke: black .9px; transform: translateY(13px);font-size: 20px;">RESTUARANT</h3><div class="text-boxindexbanner">      
+                      <h1>The Highest Quality</h1>
+                      <p style="color: rgb(234, 232, 232); text-shadow: 2px 2px 10px black; font-weight: 200;font-family: poppins , sans-serif;">Your diet is a bank account good food choices are investment Food is for eating and good food is to be enjoyed.I think food is actually very beautiful in itself.</p>
+                  </div></h5>
+                    <p class="salabanner">
+                      <div class="wrapperINDEXBANNER">
+                        <div class="static-txtindebanner" >OUR RESTUARANT HAVE GOOD</div>
+                      <ul class="dynamic-txtsindebanner">
+                        <li><span>SERVICE</span></li>
+                        <li><span>QUALITY</span></li>
+                        <li><span>STAFF</span></li>
+                        <li><span>CHEFS</span></li>
+                      </ul>
+                      <span>  
+                        <div>
+                      <br><br>
+                          <button class="buttunindes">MAKE RESERVATION</button>
+                      
+                         </div>
+                      </span>
+                       </div>
+                    </p>
+                  </div>
+                </div>
+            
+              
+
+
+                <div class="carousel-item" style="transition: 0.5s;">
+                
+                  <img class="d-block w-100 hey" src=" image/banner101.jpg" alt="Third slide" style="transition: 0.5s;">
+                  <div class="carousel-caption  d-md-block" >
+                    <h5><h3 style="font-weight:700; color: var(--main-color); -webkit-text-stroke: black .9px; transform: translateY(13px);font-size: 20px;">SHOP / CAFE</h3><div class="text-boxindexbanner">      
+                      <h1>Real Good Food</h1>
+                      <p style="color: rgb(234, 232, 232); text-shadow: 2px 2px 10px black; font-weight: 200;font-family: poppins , sans-serif;">People who love to eat are always the best people." "To eat is a necessity, but to eat intelligently is an art." "We all eat, an it would be a sad waste of opportunity to eat..</p>
+                  </div></h5>
+                    <p><div class="wrapperINDEXBANNER">
+                      <div class="static-txtindebanner">OUR RESTUARANT HAVE GOOD </div>
+                      <ul class="dynamic-txtsindebanner">
+                      <li><span>SERVICE</span></li>
+                      <li><span>QUALITY</span></li>
+                      <li><span>STAFF</span></li>
+                      <li><span>CHEFS</span></li>
+                      </ul>
+
+                      <span> 
+                        <div>
+                          <br><br>
+                          <button class="buttunindes">MAKE RESERVATION</button>
+                      
+                         </div>
+                      </span>
+                       </div>
+                      </p>
+                  </div>
+                </div>
+              </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"style="transition: 1.5s;">
+              <span class="carousel-control-prev-icon arrowbro" aria-hidden="true"></span>
+              <span class="sr-only" style="transition: 1.5s;">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="transition: 1.5s;">
+              <span class="carousel-control-next-icon arrowbro2" aria-hidden="true"></span>
+              <span class="sr-only" style="transition: 1.5s;">Next</span>
+            </a>
+          </div>
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+    
+<div class="speacial" id="speacial3">
+  <h1 data-aos="fade-up">- Special Gallery -</h1>
+  </div>
+          <div class="agency" style="margin-top: 30px; margin-bottom: 30px;" data-aos="fade-up">
+            <div class="carousels owl-carousel">
+               <a href="gallery.html"><div class="card56 card-1">
+                  <img src="image/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" style="position: relative; width: 100%; height: 100%; object-fit: cover;   border-radius: 10px;">
+               </div></a>
+               <a href="gallery.html"> <div class="card56 card-2">
+                 <img src="image/s2.jpg" style="position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+               </div></a>
+               <a href="gallery.html"> <div class="card56 card-2">
+                 <img src="image/s3.jpg" style="position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>   </a>
+              <a href="gallery.html"> <div class="card56 card-3">
+                 <img src="image/s44.jpg" style="position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+               </div></a>
+               <a href="gallery.html"> <div class="card56 card-4">
+                 <img src="image/s5.jpg" style="position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+               </div></a>
+               <a href="gallery.html">   <div class="card56 card-5">
+            <img src="image/s6.jpg" style="position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+               </div></a>
+            </div>
+         </div>
+        
+         <div id="AGE" style="color: white; font-size: 1px; opacity: 0;"></div>
+      
+
+      
+<!-- __________________________________________________________________________________________________________________ -->
+
+            <div class="indexbanner2" style="margin-top: 90px;" >
+               <h4 class="ok" >- COME AND SEE -</h4>
+               <h1 class="ok2" >We create delicious Experiences</h1>
+            </div>
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+  
+<div class="speacial">
+  <h1 data-aos="fade-up">- OUR BLOGS -</h1>
+
+  <div class="container32 ">
+    
+    <div class="card2121 heeee" data-aos="fade-up">
+      <figure class="card2121__thumb">
+        <img src="image/blogbro.jpg" alt="Picture by Kyle Cottrell" class="card2121__image">
+        <figcaption class="card2121__caption">
+          <h2 class="card2121__title">A Culinary Journey with Chef Dennis</h2>
+          <p class="card2121__snippet" style="font-family: poppin; font-weight:100; color: white;" >Easy to make Restaurant Style recipes created by a chef with tips and tricks to make your time in the kitchen fun and delicious!</p>
+          <a href="https://detailed.com/food-blogs/" class="card2121__button">Read more</a>
+        </figcaption>
+      </figure>
+    </div>
+  
+    <div class="card2121" data-aos="fade-up">
+      <figure class="card2121__thumb">
+        <img src="image/blog3.jpg" alt="Picture by Nathan Dumlao" class="card2121__image">
+        <figcaption class="card2121__caption">
+          <h2 class="card2121__title">	
+            Sallys Baking Addiction and How Sweet Eats</h2>
+          <p class="card2121__snippet" style="font-family: poppin; font-weight:100; color: white;" >All things baking with options to browse by category, season, or ingredient. Delicious-looking recipes and a baking basics series that covers techniques, tools, and tips.</p>
+          <a href="https://detailed.com/food-blogs/" class="card2121__button">Read more</a>
+        </figcaption>
+      </figure>
+    </div>
+  
+        <div class="card2121"  data-aos="fade-up">
+          <figure class="card2121__thumb">
+            <img src="image/blogbro2.jpg" alt="Picture by Daniel Lincoln" class="card2121__image">
+            <figcaption class="card2121__caption">
+              <h2 class="card2121__title">	
+                Love and Lemons and Budget Bytes</h2>
+              <p class="card2121__snippet" style="font-family: poppin; font-weight:100; color: white;" >Colorful recipes with seasonal food—often with a twist of lemon. Written by blogging couple Jeanine and Jack, who have also authored a well-received cookbook by the same name.</p>
+              <a href="https://detailed.com/food-blogs/" class="card2121__button">Read more</a>
+            </figcaption>
+          </figure>
+        </div>
+      
+      <div class="card2121" data-aos="fade-up">
+        <figure class="card2121__thumb" >
+          <img src="image/blog4.jpg" alt="Picture by Daniel Lincoln" class="card2121__image">
+          <figcaption class="card2121__caption">
+            <h2 class="card2121__title">Two Peas & Their Pod and Chef's Pencil</h2>
+            <p class="card2121__snippet" style="font-family: poppin; font-weight:100; color: white;" >recipes, meal plans, lifestyle, and a cookie section with almost 200 cookie recipes. Features family-friendly cooking and meals.</p>
+            <a href="https://detailed.com/food-blogs/" class="card2121__button">Read more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>  
+  
+  
+  </div>
+
+
+
+<div class="speacial" id="hamza1">
+
+  <h1 class="" data-aos="fade-up">- how it works -</h1>
+  <br><br><br>
+
+  <section class="steps ">
+
+      <div class="box" data-aos="fade-up">
+          <img src="dammoimage/hand-holding-fries-yellow-background_23-2148258480.jpg" alt="">
+          <h3>Choose your favorite food</h3>
+      </div>
+      <div class="box" data-aos="fade-up">
+          <img src="image/steppppp2.jpg" alt="">
+          <h3>Free and fast delivery</h3>
+      </div>
+      <div class="box" data-aos="fade-up">
+          <img src="image/close-cropped-photo-female-holding-260nw-1183167412(1).jpg" alt="">
+          <h3>Easy payments methods</h3>
+      </div>
+      <div class="box" data-aos="fade-up">
+          <img src="image/women(1).jpg" alt="">
+          <h3>And finally, enjoy your food</h3>
+      </div>
+  
+  </section>
+
+</div>
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+<!-- ______________________RECIPIES_________________________________ -->
+<div id="uppercase" style="display: none;">
+
+  <div id="generic_price_table">
+<section>
+
+        <div class="container-fluid">
+
+            <!--BLOCK ROW START-->
+            <div class="gameefahs">
+                <div class="col-md-4" >
+
+                  <!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix">
+
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+
+                              <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Basic</span>
+                                </div>
+                                <!--//HEAD END-->
+
+                            </div>
+                            <!--//HEAD CONTENT END-->
+
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">99</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                          <ul>
+                              <li><span>200</span> recipies</li>
+                                <li><span>20</span> chefs</li>
+                                <li><span>12</span> Accounts</li>
+                                <li><span>7</span> days</li>
+                                <li><span>24/7</span> Service</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                          <a class=""  >Sign up</a>
+                        </div>
+                        <!--//BUTTON END-->
+
+                    </div>
+                    <!--//PRICE CONTENT END-->
+
+                </div>
+
+                <div class="col-md-4 BEEECHWALA">
+
+                  <!--PRICE CONTENT START-->
+                    <div class="generic_content active clearfix">
+
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+
+                              <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span style="font-size: 17px; font-weight: 800; margin-top: -10px;">CLICK TO SIGN UP OUR MEMBERSHIP</span>
+                                </div>
+                                <!--//HEAD END-->
+
+                            </div>
+                            <!--//HEAD CONTENT END-->
+
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">199</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                          <ul>
+                            <li><span>500</span> recipies</li>
+                                <li><span>50</span> chefs</li>
+                                <li><span>72</span> Accounts</li>
+                                <li><span>14</span> days</li>
+                                <li><span>24/7</span> Service</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+
+                        <!--BUTTON START2-->
+                        <div class="generic_price_btn clearfix">
+                          <a class=""  onclick="onpenpopopop()">Sign up</a>
+                        </div>
+                        <!--//BUTTON END-->
+
+                    </div>
+                    <!--//PRICE CONTENT END-->
+
+                </div>
+                <div class="col-md-4">
+
+                  <!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix">
+
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+
+                              <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Unlimited</span>
+                                </div>
+                                <!--//HEAD END-->
+
+                            </div>
+                            <!--//HEAD CONTENT END-->
+
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">299</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                          <ul>
+                            <li><span>1000</span> recipies</li>
+                                <li><span>100</span> chefs</li>
+                                <li><span>6</span> Accounts</li>
+                                <li><span>30</span> days</li>
+                                <li><span>24/7</span> Service</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                          <a class="" href="">Sign up</a>
+                        </div>
+                        <!--//BUTTON END-->
+
+                    </div>
+                    <!--//PRICE CONTENT END-->
+
+                </div>
+            </div>
+            <!--//BLOCK ROW END-->
+
+        </div>
+    </section>
+
+    </div>
+</div>
+<div id="brother"style="display: none;" >
+
+
+<div class="latest-recipie">
+
+
+<h1>WELCOME TO OUR RECIPIE COMMUNITY</h1>
+
+</div>
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+<div class="recipe-card_main">
+
+<div class="recipe-card">
+  <div id="recipe-card__cover" class="recipe-card__cover">
+    <div class="recipe-card__img">
+      <img
+        src="image/photo-1484723091739-30a097e8f929.jpg"
+        alt="Blueberry French Toast">
+    </div>
+    <div class="recipe-card__cover-details">
+      <div id="recipe-card__duration" class="recipe-card__duration">
+        <p><span>30</span>mins</p>
+      </div>
+      <div id="recipe-card__servings" class="recipe-card__servings">
+        <p><span>8</span>servings</p>
+      </div>
+      <div id="recipe-card__info" class="recipe-card__info">
+
+<a href="https://www.simplyrecipes.com/recipes/baked_blueberry_french_toast_casserole/" style="color: white;">
+        <div class="recipe-card__title">
+          <h1>Blueberry French Toast</h1>
+        </div>
+      </a>
+        <div class="recipe-card__description">
+          <p>Wonderful blueberry french toast recipe to serve for your whole family!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="recipe-card">
+<div id="recipe-card__cover" class="recipe-card__cover">
+<div class="recipe-card__img">
+<img
+  src="image/lasagna-recipe-11.jpg"
+  alt="Blueberry French Toast">
+</div>
+<div class="recipe-card__cover-details">
+<div id="recipe-card__duration" class="recipe-card__duration">
+  <p><span>60</span>mins</p>
+</div>
+<div id="recipe-card__servings" class="recipe-card__servings">
+  <p><span>4</span>servings</p>
+</div>
+<div id="recipe-card__info" class="recipe-card__info">
+  <div class="recipe-card__title">
+    <a href="https://simply-delicious-food.com/classic-homemade-lasagna/" style="color: white;">
+        <h1>Classic Made Lasagna</h1>
+  </div>
+    </a>
+  <div class="recipe-card__description">
+    <p>This classic homemade lasagna recipe is all-out comfort food!</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="recipe-card">
+<div id="recipe-card__cover" class="recipe-card__cover">
+<div class="recipe-card__img">
+<img
+  src="image/Baked-Cheese-Tortellini-2117.webp"
+  alt="Blueberry French Toast">
+</div>
+<div class="recipe-card__cover-details">
+<div id="recipe-card__duration" class="recipe-card__duration">
+  <p><span>30</span>mins</p>
+</div>
+<div id="recipe-card__servings" class="recipe-card__servings">
+  <p><span>8</span>servings</p>
+</div>
+<div id="recipe-card__info" class="recipe-card__info">
+  <div class="recipe-card__title">
+
+<a href="https://veronikaskitchen.com/baked-cheese-tortellini/" style="color: white;">
+    <h1> Baked Cheese Tortellini</h1>
+      </div>
+</a>
+  <div class="recipe-card__description">
+    <p>These amazing Baked Cheese Tortellini, loaded with hearty meat sauce!</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="recipe-card">
+<div id="recipe-card__cover" class="recipe-card__cover">
+<div class="recipe-card__img">
+<img
+  src="image/shrimp.jpg"
+  alt="Blueberry French Toast">
+</div>
+<div class="recipe-card__cover-details">
+<div id="recipe-card__duration" class="recipe-card__duration">
+  <p><span>70</span>mins</p>
+</div>
+<div id="recipe-card__servings" class="recipe-card__servings">
+  <p><span>8</span>servings</p>
+</div>
+<div id="recipe-card__info" class="recipe-card__info">
+  <div class="recipe-card__title">
+
+<a href="https://www.acouplecooks.com/shrimp-and-broccoli/" style="color: white;">
+    <h1>Shrimp And Broccoli</h1>
+  </div>
+</a>
+  <div class="recipe-card__description">
+    <p>This easy and simple honey garlic shrimp broccoli makes for super easy dinner!</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+</div>
+<br><br><br><br>
+<div class="hero-video">
+<h1 class="recipice_bro_world">WORLD'S BEST RECIPIES <span>SIMPLE</span>  AND <span>TASTY</span> RECIPIES</h1>
+
+
+
+
+<video class="video-bg"  autoplay loop muted >
+  <source src="image/y2mate.com - Mr Fox Restaurant Promo Video_1080p.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+<section class="recipe_4col lists">
+<div class="wrapper">
+        <article>
+                      <figure>
+                        <a href="" title="Limonata Tarifi" class="sonidharti">
+                          <img width="294" height="196" src="image/recipi2.jpg">
+                        </a>
+                      </figure>
+                      <div class="post_details">
+                        <div class="cat_star">
+                          <a href="" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+                          <div class="reviews_short">
+                            <span title="5.00 Yildiz" class="stars_given">
+                              <span style="width: 100%"></span>
+                            </span>
+                          </div>
+                        </div>
+                        <h3>
+                          <a href="https://cookpad.com/us/recipes/11486883-kofta-karahi" title="Limonata Tarifi" class="naaaam">KOFTA KARAHI</a>
+                        </h3>
+                        <div class="other_details">
+                          <div class="view">
+                            <i class="fa fa-eye"></i> 1.2m
+                          </div>
+                          <div class="likes">
+                            <i class="fa fa-heart"></i> 158
+                          </div>
+                          <div class="user">
+                            <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+
+                              <img alt="Author Name"  src="image/Chef-Zakir.jpg"  style="height: 30px; width: 30px;">Chef Zakir
+
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+        </article>
+        <article>
+                  <figure>
+                    <a href="" title="Limonata Tarifi" class="sonidharti">
+                      <img width="294" height="196" src="image/recpici1.jpg">
+                    </a>
+                  </figure>
+                  <div class="post_details">
+                    <div class="cat_star">
+                      <a href="" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+                      <div class="reviews_short">
+                        <span title="5.00 Yildiz" class="stars_given">
+                          <span style="width: 100%"></span>
+                        </span>
+                      </div>
+                    </div>
+                    <h3>
+                      <a href="https://www.teaforturmeric.com/chicken-karahi/" title="Limonata Tarifi" class="naaaam">CHICKEN KARAHI</a>
+                    </h3>
+                    <div class="other_details">
+                      <div class="view">
+                        <i class="fa fa-eye"></i> 3.2B
+                      </div>
+                      <div class="likes">
+                        <i class="fa fa-heart"></i> 1223
+                      </div>
+                      <div class="user">
+                        <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                          <img alt="Author Name" src="image/zubaida-tariq.jpg" style="height: 30px; width: 30px; ">Chef Zubaida Tariq
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+        </article>
+        <article>
+              <figure>
+                <a href="" title="Limonata Tarifi" class="sonidharti">
+                  <img width="294" height="196" src="image/recipi3.jpg">
+                </a>
+              </figure>
+              <div class="post_details">
+                <div class="cat_star">
+                  <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+                  <div class="reviews_short">
+                    <span title="5.00 Yildiz" class="stars_given">
+                      <span style="width: 100%"></span>
+                    </span>
+                  </div>
+                </div>
+                <h3>
+                  <a href="https://cafedelites.com/chicken-tikka-masala/" title="Limonata Tarifi" class="naaaam">SPICY TIKKA</a>
+                </h3>
+                <div class="other_details">
+                  <div class="view">
+                    <i class="fa fa-eye"></i> 1.0B
+                  </div>
+                  <div class="likes">
+                    <i class="fa fa-heart"></i> 1820
+                  </div>
+                  <div class="user">
+                    <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                      <img alt="Author Name"  src="image/CHEFANWAR.jpg"  style="height: 30px; width: 30px; ">chef Shireen Anwar
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi4.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Launch dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.teaforturmeric.com/chicken-biryani/" title="Limonata Tarifi" class="naaaam">CHICKEBN BIRYANI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.7B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 12560
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; " >Chef Gulzar Begum
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi5.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://food.ndtv.com/recipe-chicken-korma-186274" title="Limonata Tarifi" class="naaaam">KORMA SALAN</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 704K
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 1205
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; ">Chef Zarnak Sidhwa
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/RECIPI6.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.lezizyemeklerim.com/limonata-tarifi" title="Limonata Tarifi" class="naaaam">SPICY HALEEM</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 1.0B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 12900
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32"  src="image/Chef-Zakir.jpg"  style="height: 30px; width: 30px;">Chef Zarnak Sidhwa
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipic7.jpeg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Lauch dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://recipes.timesofindia.com/recipes/hyderabadi-haleem/rs54672891.cms" title="Limonata Tarifi" class="naaaam">NIHARI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 102BK
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 1206
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFANWAR.jpg"  style="height: 30px; width: 30px; " >Chefs Tahir Chaudhary
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi8.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Launch dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://butteroverbae.com/lahori-chargha-recipe/" title="Limonata Tarifi" class="naaaam">CHICKEN CHARGA</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.02B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 18920
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32"  src="image/Chef-Zakir.jpg"  style="height: 30px; width: 30px;">Chef Saddat Siddique
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipic9.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.masala.tv/balochi-karahi/" title="Limonata Tarifi" class="naaaam">BALOCHI KARAHI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 2.2B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 12076
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/zubaida-tariq.jpg" style="height: 30px; width: 30px; ">Chef Mehboob Khan
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi10.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.deliciousmagazine.co.uk/recipes/baluchi-style-chicken-sajji/" title="Limonata Tarifi" class="naaaam">CHICKEN SAJJI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.8B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 16720
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFANWAR.jpg"  style="height: 30px; width: 30px; ">Chef Naheed Ansari
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi11.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Içecek Tarifleri</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://cooking.nytimes.com/recipes/7878-stir-fried-chicken-with-ketchup" title="Limonata Tarifi" class="naaaam">RED KETCHUUP CHICKEN</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.92B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 120768
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; ">Chef Mehboob Khan
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/PASINDEY.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://kfoods.com/recipes/beef-pasanda_rid3271" title="Limonata Tarifi" class="naaaam">PASINDEY</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 103.2k
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 1207
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; " >Chef Zarnak Sidhwa
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+</div>
+</section>
+
+
+
+</div>
+<!-- ______________________RECIPIES_________________________________ -->
+
+
+
+
+
+<div class="yyyyeeeeehhhh"></div>
+
+<section class="speciality container" id="speciality" >
+
+  <div class="Recipies">
+    <h1 data-aos="fade-up">- New Recipies -</h1>
+  </div>
+          
+  <br><br><br><br><br>
+  <div class="recipi-container">
+
+      <div class="recipi"data-aos="fade-up">
+          <img class="image" src="image/s-img-1.jpg" alt="">
+          <div class="content">
+              <img src="image/s-1.png" alt="">
+              <h3>Tasty Burger</h3>
+              <p>Make the pickled red onions: In a small pot, combine the water, apple cider vinegar, salt, sugar, peppercorns, and coriander seeds, and bring to a boil over medium-high heat, stirring until the sugar</p>
+          </div>
+      </div>
+      <div class="recipi"data-aos="fade-up">
+        <img class="image" src="image/s-img-2.jpg" alt="">
+        <div class="content">
+            <img src="image/s-2.png" alt="">
+            <h3>Delicious Pizza</h3>
+            <p>Be it any occasion, we all love to eat pizza at home. But, what goes behind making this delicious dish? Well, learn all about making a delicious pizza at home with this easy recipe.</p>
+        </div>
+    </div>
+    <div class="recipi" data-aos="fade-up">
+      <img class="image" src="image/s-img-3.jpg" alt="">
+      <div class="content">
+          <img src="image/s-3.png" alt="">
+          <h3>Yummy IceCream</h3>
+          <p>This silky, luscious and very classic custard can be used as the base for any ice cream flavor you can dream up. These particular proportions of milk and cream to egg yolk will give </p>
+      </div>
+  </div>
+  
+  <div class="recipi"data-aos="fade-in" >
+    <img class="image" src="image/burger.jpg" alt="" >
+    <div class="content">
+        <img src="image/s-4.png" alt="" width="60px" height="50px">
+        <h3>Tasty zinger</h3>
+        <p>Slice the buns in half and lightly toast, then stack the final burger, with the lettuce at the top, then the chicken and finally the mayonnaise or KFC zinger .</p>
+    </div>
+</div>
+<div class="recipi" data-aos="fade-in">
+  <img class="image" src="image/fishrecipic.jpg" alt="">
+  <div class="content">
+      <img src="image/s-5.png" alt=""  width="60px" height="50px">
+      <h3>Delicious shawar</h3>
+      <p>These fried fish fingers are how you get them on the streets of Pakistan. Light and crispy from the outside, flavourful and spicy from the inside </p>
+  </div>
+</div>
+<div class="recipi"data-aos="fade-in">
+  <img class="image" src="image/cofferecipee.jpg" alt="" >
+<div class="content">
+    <img src="image/s-6.png" alt=" "  width="60px" height="50px">
+    <h3>Fresh Coffee</h3>
+    <p>If you have a coffee machine, make the best use of it with our easy flat white recipe. This trendy beverage has earned its spot at the breakfast table.</p>
+</div>
+</div>
+
+  
+  
+      
+
+  </div>
+
+</section>
+
+
+
+
+
+<div class="changethemebtn" onclick="themeopen()">
+  <div class="gomaoo">
+    <i class="fa-solid fa-angle-up" style="transform:translateY(5px)translateX(5px)  rotate(90deg);"></i>
+  </div>
+</div>
+
+<div class="themepanel" id="chanasdasddsa">
+  <div class="close-theme-panel" onclick="themeclose()"><button type="button" class="btn-close "></button></div>
+  <div class="theme-panel-heading">THEME CUSTOMIZER</div>
+  <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">LIGHT BACKGROUND MODE</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square"  onclick="myFunction()">
+
+        </div>
+        <div class="themepanel-square3" onclick="myFunction1()">
+
+        </div>
+        <div class="themepanel-square2" onclick="black()">
+
+        </div>
+    </div>
+    <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">GRADIENT BACKGROUND MODE</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square4"onclick="gradientone()" >
+
+        </div>
+        <div class="themepanel-square5" onclick="gradienttwo()">
+
+        </div>
+        <div class="themepanel-square6" onclick="gradientthree()">
+
+        </div>
+        <div class="themepanel-square7" onclick="gradientfour()">
+
+        </div>
+        <div class="themepanel-square8" onclick="gradientfive()">
+
+        </div>
+        <div class="themepanel-square9" onclick="gradientsix()">
+
+        </div>
+    </div>
+    <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">GAUSSIAN TEXTURE BACKGROUND</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square10"onclick="gradientseven()"  >
+
+        </div>
+        <div class="themepanel-square11" onclick="gradienteight()">
+
+        </div>
+        <div class="themepanel-square12" onclick="gradientnine()">
+
+        </div>
+        <div class="themepanel-square13" onclick="gradientten()">
+
+        </div>
+        <div class="themepanel-square14" onclick="gradienteleven()">
+
+        </div>
+        <div class="themepanel-square15" onclick="gradienttwelve()" >
+
+        </div>
+        
+    </div>
+</div>
+
+
+
+   
+
+<!--       
+        <div class="wrap  row8778">
+          
+          <div class="tile " > 
+            <img src='image/u1.jpg'/>
+            <div class="text">
+            <h1>Lorem ipsum.</h1>
+            <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+            <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+          <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
+          </div>
+          
+          
+          <div class="tile "> 
+            <img src='image/u2.jpg'/>
+            <div class="text">
+            <h1>Lorem ipsum.</h1>
+            <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+            <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+          <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
+           </div>
+            
+            <div class="tile"> 
+            <img src='image/u3.jpg'/>
+            <div class="text">
+            <h1>Lorem ipsum.</h1>
+            <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+            <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+          <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
+           </div>
+          
+            <div class="tile"> 
+              <img src='image/u4.jpg'/>
+              <div class="text">
+              <h1>Lorem ipsum.</h1>
+              <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+              <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              </div>
+             </div>
+            
+            
+            <div class="tile"> 
+              <img src='image/banner1.jpg'/>
+              <div class="text">
+              <h1>Lorem ipsum.</h1>
+              <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+              <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              </div>
+             </div>
+              
+              <div class="tile"> 
+              <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'/>
+              <div class="text">
+              <h1>Lorem ipsum.</h1>
+              <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+              <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+            <div class=>
+                <span></span>
+                <span></span>
+              </div>
+              </div>
+             </div>
+
+            
+       </div> -->
+
+
+
+       
+       <br><br>
+       <br><br>
+       <br><br><br><br><br><br><br>
+<!-- __________________________________________________________________________________________________________________ -->
+
+<!-- <div class="banner" style="background: black; ">
+  <div class="whole-menu">
+ 
+    <div class="heading-menu">
+      Special Menu
+    </div>
+          <div class="row">
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+          
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+           
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+  
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+              <div class="line-menu">
+                <h5>Lemon-Rosemary Vegetable ................ <span>$20.50</span></h5> 
+                <h5>Chicken / Rosemary / Lemon</h5>
+                <hr>
+              </div>
+  
+          </div>
+  
+    
+  </div>
+  
+  
+  
+ </div> -->
+
+
+ <section class="w3l-mobile-content-6 py-5 hhhh" id="hhhha">
+  <div class="mobile-info py-lg-5 py-md-4 py-2">
+      <!-- /mobile-info-->
+      <div class="container broooasdsa" style="margin-left: 90px;" >
+          <div class="row mobile-info-inn mx-lg-0" >
+              <div class="col-lg-4 mobile-right" style="transform: translateY(-14px);">
+                  <div class="row mobile-right-grids mb-lg-5 mb-4" style="margin-top:37px;" data-aos="fade-up">
+                      <div class="col-2 mobile-right-icon">
+                          <div class="mobile-icon">
+                              <span class="fa fa-leaf"></span>
+                          </div>
+                      </div>
+                      <div class="col-10 mobile-right-info">
+                          <h6><a href="#url"  class="headdddddaa">Natural ingredients</a></h6>
+                          <p class="fafafa">Natural gradient descent is an optimization method traditionally motivated from the perspective of information geometry.</p>
+                      </div>
+                  </div>
+                  <div class="row mobile-right-grids mb-lg-5 mb-4" data-aos="fade-up">
+                      <div class="col-2 mobile-right-icon">
+                          <div class="mobile-icon">
+                              <span class="fa fa-shopping-basket"></span>
+                          </div>
+                      </div>
+                      <div class="col-10 mobile-right-info" data-aos="fade-up">
+                          <h6><a href="#url"  class="headdddddaa"> Fresh vegetables</a></h6>
+                          <p class="fafafa">Fresh produce means fruits and vegetables that have not been processed in any manner.</p>
+                      </div>
+                  </div>
+                  <div class="row mobile-right-grids" data-aos="fade-up">
+                      <div class="col-2 mobile-right-icon" data-aos="fade-up">
+                          <div class="mobile-icon">
+                              <span class="fa fa-users"></span>
+                          </div>
+                      </div>
+                      <div class="col-10 mobile-right-info" data-aos="fade-up">
+                          <h6><a href="#url"  class="headdddddaa">World’s best Chef </a></h6>
+                          <p class="fafafa">Our restaurant has the best chef and .They are available 24/7</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 mobile-left" data-aos="zoom-in">
+                  <img src="image/burger1.png" class="img-fluids radiuss-image hhhhh" alt="">
+              </div>
+              
+              <div class="col-lg-4 mobile-right" style="transform: translateX(30px);">
+                  <div class="row mobile-right-grids mb-lg-5 mb-4 hhhhhh" data-aos="fade-up">
+                      <div class="col-2 mobile-right-icon">
+                          <div class="mobile-icon">
+                              <span class="fa fa-cogs"></span>
+                          </div>
+                      </div>
+                      <div class="col-10 mobile-right-info" >
+                          <h6><a href="#url"  class="headdddddaa">Best quality products</a></h6>
+                          <p class="fafafa">Quality Is More Than Making a Good Product Corporate executives and consumers have in recent years adopted divergent view product</p>
+                      </div>
+                  </div>
+                  <div class="row mobile-right-grids mb-lg-5 mb-4" data-aos="fade-up">
+                      <div class="col-2 mobile-right-icon">
+                          <div class="mobile-icon">
+                              <span class="fa fa-motorcycle"></span>
+                          </div>
+                      </div>
+                      <div class="col-10 mobile-right-info" data-aos="fade-up">
+                          <h6><a href="#url" class="headdddddaa" >Fastest door delivery</a></h6>
+                          <p class="fafafa">Food and groceries delivery from ڪراچي Karachi’s best restaurants and shops</p>
+                      </div>
+                  </div>
+                  <div class="row mobile-right-grids" data-aos="fade-up">
+                      <div class="col-2 mobile-right-icon">
+                          <div class="mobile-icon" >
+                              <span class="fa fa-thumbs-down"></span>
+                          </div>
+                      </div>
+                      <div class="col-10 mobile-right-info" >
+                          <h6><a href="#url"  class="headdddddaa" >Ground beef & Low fat</a></h6>
+                          <p class="fafafa">Our restaurant serves beef and low fat. Maintain your diet</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+      <!-- //mobile-info-->
+  </div>
+</section>
+
+<div class="boxyou" id="boxxc">
+
+
+  <div class="popup-teen" id="teenfirstad">
+    <div class="contentBox-teen" >
+      <div class="closepopop-old" onclick="teengayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/teenage-ad-removebg-preview.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>SPECIAL OFFER FOR TEENAGERS</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- __________________________________________________________________________________________________________________ -->
+
+
+  <div class="popop-young" id="teenfirstad2">
+    <div class="contentBox-young" >
+      <div class="closepopop-old" onclick="younggayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/young-addd.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>OFFERS FOR YOUNGSTER IN FAST FOOD</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="popop-old" id="teenfirstadasd3">
+    <div class="contentBox-old" >
+        <div class="closepopop-old" onclick="adoldgayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/OLD-AD.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>OFFERS FOR OLD (WOMANS/MANS)</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+
+    <div class="popop-everyone" id="teenfirstadasd4">
+
+      <div class="closepopop-everyone" onclick="adeverygayad()"><i class="fas fa-close"></i></div>
+      <div class="imag-ad-four">
+        <img src="dammoimage/Poster1.png" alt="">
+      </div>
+    </div> 
+</div>
+
+<button onclick="boxxx()" style="display: none;">clickbro</button>
+
+<script>
+  document.getElementById("boxxc").style.display = sessionStorage.getItem("aasdasdsd");
+   function boxxx() {
+   document.getElementById("boxxc").style.display = "none";
+   sessionStorage.setItem("aasdasdsd","none");
+   
+   }
+
+</script>
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+<div class="indexbanner3" id="index3">
+  <div class="cooonntaant">
+  <h4 class="ok4">- BOOK YOUR TABLE -</h4> 
+  <h1 class="ok3">The Right Ingredients for the Right Food. Eat Healthy, Delicious and Perfect Dishes From Our Hotel</h1>
+  <h4 class="ok-1">- Call us to order: <span> Contact Now </span> -</h4>
+  </div>
+</div>
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+<!-- TESTIMONIALS -->
+ 
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-12">
+      <div class="Recipies hamza">
+        <h1 data-aos="fade-up">- What Other Companies Says -</h1>
+      </div>
+      <div id="customers-testimonials" class="owl-carousel"  > 
+      
+      <!--TESTIMONIAL 1 -->
+      <div class="item shadow-lg">
+          <div class="p-4 rounded"> <img src="https://annedece.sirv.com/Images/earth.png" class="imagebro" >
+          <div class="commo pt-3"><img src="https://annedece.sirv.com/Images/commo6.png"></div>
+          <p class="mb-4 text-muted1">This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.</p>
+          <hr>
+          <div class="d-flex align-items-center">
+              <div class="author-img43 mr-3"> <img src="https://annedece.sirv.com/Images/pexels-andrea-piacquadio-762020%20(1).jpg"> </div>
+              <div>
+              <h6 class="m-0 float-left font-weight-bold text-warning1">Kevin Rich</h6>
+              <p class="m-0 small font-medium text-muted1">(CEO) of Contour</p>
+            </div>
+            </div>
+        </div>
+        </div>
+      <!--END OF TESTIMONIAL 1 --> 
+      <!--TESTIMONIAL 2 -->
+      <div class="item shadow-lg" >
+          <div class="p-4 rounded"> <img src="https://annedece.sirv.com/Images/cod-lab.png" alt="" class="imagebro">
+          <div class="commo pt-3"><img src="https://annedece.sirv.com/Images/commo6.png"></div>
+          <p class="mb-4 text-muted1">It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.I have to say, I enjoyed every single bite of the meal in (RN)</p>
+          <hr>
+          <div class="d-flex align-items-center">
+              <div class="author-img43 mr-3"> <img src="https://annedece.sirv.com/Images/pexels-stefan-stefancik-91227.jpg"> </div>
+              <div>
+              <h6 class="m-0 float-left font-weight-bold text-warning1">Ruth Anthony</h6>
+              <p class="m-0 small font-medium text-muted1">(CEO) of Venture</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      <!--END OF TESTIMONIAL 2 --> 
+      <!--TESTIMONIAL 3 -->
+      <div class="item shadow-lg" >
+          <div class="p-4 rounded"> <img src="https://annedece.sirv.com/Images/tvit.png" alt="" class="imagebro">
+          <div class="commo pt-3"><img src="https://annedece.sirv.com/Images/commo6.png"></div>
+          <p class="mb-4 text-muted1">This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they’re doing and what they’re talking about, Do yourself a favor and visit this lovely restaurant in (CN). The service is unmatched. </p>
+          <hr>
+          <div class="d-flex align-items-center">
+              <div class="author-img43 mr-3"> <img src="https://annedece.sirv.com/Images/pexels-andrea-piacquadio-839011.jpg"> </div>
+              <div>
+              <h6 class="m-0 float-left font-weight-bold text-warning1">Brian Buie</h6>
+              <p class="m-0 small font-medium text-muted1">Arpatech</p>
+            </div>
+            </div>
+        </div>
+        </div>
+      <!--END OF TESTIMONIAL 3 --> 
+      <!--TESTIMONIAL 4 -->
+      <div class="item shadow-lg">
+          <div class="p-4 rounded"> <img src="https://annedece.sirv.com/Images/lighting.png" alt="" class="imagebro">
+          <div class="commo pt-3"><img src="https://annedece.sirv.com/Images/commo6.png"></div>
+          <p class="mb-4 text-muted1">Do yourself a favor and visit this lovely restaurant in (CN). The service is unmatched. The staff truly cares about your experience. The food is absolutely amazing – everything we tasted melted in other mouths. Absolutely the best meal we had while in (CN). Highly recommend!</p>
+          <hr>
+          <div class="d-flex align-items-center">
+              <div class="author-img43 mr-3"> <img src="https://annedece.sirv.com/Images/pexels-tim-savage-736716.jpg"> </div>
+              <div>
+              <h6 class="m-0 float-left font-weight-bold text-warning1">Jeanna Mendoza</h6>
+              <p class="m-0 small font-medium text-muted1">(CEO) of Techlogix</p>
+            </div>
+            </div>
+        </div>
+        </div>
+      <!--END OF TESTIMONIAL 4 --> 
+      
+    </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- END OF TESTIMONIALS --> 
+
+
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+
+
+          
+          <br><br><br><br><br>
+
+  
+<!-- __________________________________________________________________________________________________________________ -->
+
+         
+<div class="slid43 container">
+  <div class="slidsd">
+
+      <div class="sli34">
+          <img src="image/slider1bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide2bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide3bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide4bro.png" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide5bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide7bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide8bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide9bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide10bro.jpg" alt=""></div>
+
+          <div class="sli34">
+            <img src="image/slider1bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide2bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide3bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide4bro.png" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide5bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide7bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide8bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide9bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide10bro.jpg" alt=""></div>
+
+  </div>
+</div>
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+       
+
+ 
+<div class="footerimgbro9" style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6) ) , url(image/hel.jpg); background-size: cover;">
+  <footer class="footer" style="background: transparent;"  >
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Restuarant</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="foodmard.html">Food-Mart</a></li>
+            <li><a href="chef.html">Chefs</a></li>
+            <li><a href="recipies.html">Recipies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="foodmard.html">Food</a></li>
+            <li><a href="foodmard.html">Bakery-item</a></li>
+            <li><a href="menu.html">Menu-items</a></li>
+            <li><a href="recipies.html">Restuarant</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://twitter.com/login"><i class="fab fa-twitter" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in" style="font-size: 20px; transform: translateY(3px);"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cpy-right text-center py-4" style="border-top: .3px solid rgb(97, 97, 97); background: transparent;">
+    <p style="font-size: 15px; letter-spacing: 5px;">© 2022 Food Diaries. All rights reserved | Design by <a href="https://www.facebook.com/AptechNorthKhi/"> Abdullah , ali , haseeb</a> </p>
+    </div>
+</div>
+
+<button onclick="adsbro()" style="display: none;"></button>
+
+
+
+<a href="#" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- --------------------------------------jQueries--------------------------------------------------------------------->
+<script src="javascript/JSON.js"></script>
+<script src="javascript/jaqury.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- ------------------------------------------------------------------------------------------------------------>
+
+
+<!-- --------------------------------------inpagejavascript--------------------------------------------------------------------->
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:100,
+      duration:1400
+    });
+  </script> 
+<script>
+
+
+
+ 
+
+
+
+jQuery(document).ready(function($) {
+              "use strict";
+              //  TESTIMONIALS CAROUSEL HOOK
+              $('#customers-testimonials').owlCarousel({
+                  loop: true,
+                  center: true,
+                  margin:-38,                   
+                  dots:true,
+                  autoplayTimeout: 5000,
+                  smartSpeed: 450,
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    768: {
+                      items: 2
+                    },
+                    1170: {
+                      items: 3
+                    }
+                  }
+              });
+          });
+</script>
+
+
+<script>
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+if (window.pageYOffset > 100) {
+  toTop.classList.add("active");
+} else {
+  toTop.classList.remove("active");
+}
+})
+
+
+</script>
+
+
+<script>
+  $(".carousels").owlCarousel({
+margin: 20,
+loop: true,
+autoplay: true,
+autoplayTimeout: 2000,
+autoplayHoverPause: true,
+responsive: {
+  0:{
+    items:1,
+    nav: false
+  },
+  600:{
+    items:2,
+    nav: false
+  },
+  1000:{
+    items:3,
+    nav: false
+  }
+}
+});
+</script>
+
+<script>
+  function loader(){
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+  setInterval(loader, 4000);
+}
+
+</script>
+
+
+
+<script>
+
+  
+
+
+
+window.addEventListener('load', () => {
+
+
+  var name = sessionStorage.getItem('NAME');
+var email = sessionStorage.getItem('EMAIL');
+var AGE = sessionStorage.getItem('AGE');
+
+document.getElementById('AGE').innerHTML = AGE;
+document.getElementById('result-name').innerHTML = name;
+document.getElementById('result-email').innerHTML = email;
+})
+
+</script>
+
+
+<script>
+  document.querySelector('#search-icon').onclick = () =>{
+  document.querySelector('#search-form').classList.toggle('active');
+}
+
+document.querySelector('#close').onclick = () =>{
+  document.querySelector('#search-form').classList.remove('active');
+}
+
+
+
+
+const welcome =document.querySelector('.welcome');
+  const closewow=document.querySelector('.closewow') ;
+
+  window.onload =function(){
+      setTimeout(function(){
+        document.getElementById("welcome").classList.add("welcomeactive");
+      }, 800)
+  }
+  
+
+  closewow.addEventListener('click', ()=>{
+    welcome.style.display ="none";
+  })
+
+var submenu = document.getElementById("subMenu2");
+
+
+
+
+
+
+ 
+
+
+
+</script>
+
+<!-- --------------------------------------inpagejavascript--------------------------------------------------------------------->
+
+<!-- --------------------------------------externaljava--------------------------------------------------------------------->
+<script src="javascript/java.js"></script>
+<script src="javascript/agedetector.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- --------------------------------------externaljava--------------------------------------------------------------------->
+    
+  </body>
+</html>

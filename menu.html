@@ -1,0 +1,2779 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="image/logobro.png">
+   <link rel="stylesheet" href="css/bootstraps.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>FOOD DIARIES - MENU</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+
+
+
+
+      .banner{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) , url(dammoimage/menu2.jpg);
+        background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+    .navbar34{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar34.sticky{
+    background:  linear-gradient( rgba(0, 0, 0, 0.921),rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.3)) ;
+    padding: 15px 0;
+    height: 90px;
+    z-index: 4;
+  }
+  .navbar34.sticky .menu-list li a {
+    font-size: 15px;
+-webkit-text-stroke: 0.4px black;
+text-shadow: 2px 2px 10px rgb(0, 0, 0);
+padding: 0 8px;
+  }
+
+  .navbar34.sticky .logo img{
+      width: 90px;
+      height: 90px;
+      transition: 0.5s;
+  }
+  
+  .navbar34.sticky  button{
+    font-size: 11px;
+  }
+
+  .navbar34.sticky #search-icon {
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+ 
+  .navbar34.sticky #shopping{
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+
+  .navbar34.sticky #user{
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+
+
+
+  .navbar34 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+
+  .logo img{
+      height: 120px;
+      width: 130px;
+      margin-top: -10px;
+      transform: scale(1.4);
+      transition: 0.5s;
+  }
+  .navbar34 .menu-list{
+    display: inline-flex;
+    margin-top: 43px;
+    top: -20px;
+  }
+
+      
+    
+  .menu-list li{
+    list-style: none;
+    margin-top: -14px;
+
+  }
+   
+  .menu-list li a:hover{
+    color: var(--main-color);
+  }
+  a.dropdown-item {
+    transition: all 0.5s ease;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .85px;
+    padding: 5px 24px;
+    color: var(--heading-color); }
+  
+ 
+    
+  @media (max-width: 1024px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar34 .menu-list{
+      position: fixed;
+      height: 101vh;
+      width: 55%;
+      max-width: 700px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: var(  --body-bg);
+      transition: all 0.3s ease;
+    }
+    .navbar34.show .menu-list{
+      left: 0%;
+      display: grid;
+    }
+    .navbar34 .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar34 .menu-list li a{
+      font-size: 18px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar34.show .menu-list li a{
+      margin-left: 0px;
+    }
+    .navbar34 .menu-list .dropdown-toggle{
+      font-size: 18px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-top: 45px;
+      margin-bottom: -40px;
+
+    }
+    .navbar34.show .menu-list .dropdown-toggle{
+      margin-left: 0px;
+    }
+  
+
+     .dropdown-menu{
+      background: black;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar34 .logo a{
+      font-size: 27px;
+    }
+  }
+ 
+.tontona10:hover{
+  background: transparent;
+  color: var(--main-color);
+}
+.navbar34.sticky .tontona10{
+  font-size: 15px;
+}
+.tontona10{
+  background: transparent;color: #fff; transform:translateY(-26px) translateX(12px) ;font-size:16px ; font-family: 'Libre Baskerville', serif;
+          -webkit-text-stroke: .2px black;
+          text-shadow: 2px 2px 8px rgb(0, 0, 0); 
+}
+
+    </style>
+
+  
+
+    
+    
+  </head>
+  <body>
+   
+<div id="agedetextors">
+
+<!-- __________________________________________________________________________________________________________________ -->
+<header>
+  <nav class="navbar34">
+    <div class="content">
+      <a href="index.html">
+          <div class="logo">
+            <img src="image/logobro.png" alt="">
+          </div>
+      </a>
+      <ul class="menu-list" style="top: -44px; ">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" ></i>
+        </div>
+    
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html"  class="activenavbar">MENU</a></li>
+        <li><a href="adout.html">ABOUT US</a></li>
+        <li><a href="chef.html">CHEFS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle tontona10" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            RESTUARANT
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="foodmard.html">FOOD MART</a>
+            <a class="dropdown-item" href="blog.html">BLOGS</a>
+            <a class="dropdown-item" href="recipies.html">RECIPIES</a>
+            <a class="dropdown-item" href="tablebook.html">BOOK A TABLE</a>
+            <a class="dropdown-item" href="reviews.html">REVIEWS</a>
+          </div>
+        </div>
+        <li ><a href="contact.html" >CONTACT</a></li>
+      </ul>
+      <div class="icons">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <i class="fas fa-search" id="search-icon"></i>
+        <div class="line"></div>
+        <a href="contact.html" class="fas fa-phone" id="shopping"></a>
+        <div class="line"></div>
+        <a id="user" class="fas fa-user" onclick="toggleMenu(),initClock()"></a>
+    </div>
+    </div>
+   
+  
+    
+    <!-- <div class="profile-images-card">
+      <div class="profile-images" id="pic1">
+        <img src="image/profile.png"  id="upload-img" onclick="toggleMenu()">
+      </div>
+      <div class="custom-file">
+        <input type="file" id="fileupload">
+      </div>
+    </div> -->
+    <div class="sub-menu-wrap" id="subMenu">
+
+
+      <div class="sub-menu" id="subMenu2">
+  
+  
+        <div class="user-info" style="width: 57px;">
+  
+  
+     
+          <div class="profile-images-card">
+           
+             <div class="profile-images" id="pic2" style="margin-left: 6px; width: 60px; height: 60px;">
+           
+               <img src="image/profile.png" id="upload-img" onclick="toggleMenu()">
+                
+        </div>
+                   
+     
+                   <div class="custom-file" style="  margin-left: 10px;
+         transform: translateY(20px);">
+         
+                 <!-- <label for="fileupload">Upload Profile</label> -->
+             
+             <input type="file" id="fileupload">
+             
+           </div>
+             
+         </div>
+         <div style="position: relative;float: right;text-align: center;/*! margin-left: 33px; *//*! padding-right: 11px; */">
+          <h2 style="position: relative;margin-left: 9px;height: 31px;;text-align: center;">
+  
+            <span id="result-name" style="font-size: 36px;font-weight: 500;letter-spacing: 1px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></span>
+          </h2>
+      
+          <h2 style="text-align:center;margin-left: 8px;">
+            <span id="result-email" style="font-size:13px;"></span>
+          </h2>
+      </div>
+         </div>
+        <hr style="margin-top: 18px;"> 
+  
+        <a href="#" class="sub-menu-links">
+          <img src="image/sprofile.png" >
+          <p><label for="fileupload" id="upload" class="uploadop">Upload Profile <i class="bi bi-cloud-plus" style="font-size:26px; margin-left: 38px;"></i></label></p>
+    
+        </a>
+        
+        <a href="#" class="sub-menu-links">
+          <img src="image/Project_21-removebg-preview.png" height="43px" style="width: 58px;" width="44px">
+          <p style=" transform: translateX(-1px);" >Visitors</p>
+  
+          <div class="website-counter" style="font-size: 16px;color: var(--hover-color);transform: translate(-12px,-4px);font-family: initial;font-weight: bolder;"> </div>
+         
+        </a>
+   
+        <a href="#" class="sub-menu-links">
+          <img src="image/Project_20_1_-removebg-preview.png" height="40px">
+          <p style="transform: translateY(2px);">Time</p>    
+          <div class="website-counter" style="font-size: 16px;color: var(--hover-color);transform: translate(-5px,-4px);font-family: initial;font-weight: bolder;"></div>
+           
+              
+        </a>
+        <div class="datetime" style="margin-bottom: -95px;">
+          <div class="date">
+              <span id="dayname">Day</span>,
+              <span id="month">Month</span>,
+              <span id="daynum">00</span>,
+              <span id="year">Year</span>,
+          </div>
+          <div class="time">
+              <span id="hour">00</span><span style="font-size: 20px; transform: translateY(-4px);">:</span>
+              <span id="minutes">00</span><span style="font-size: 20px; transform: translateY(-4px);">:</span>
+              <span id="second">00</span>
+              <span id="period" >AM</span>
+          </div>   
+      
+        </div>
+        <a  class="sub-menu-links">
+          <img src="dammoimage/Project_26_1_-removebg-preview.png" >
+          <p style="transform: translateY(2px);">Change Theme<label class="darkswitch">
+            <i class="bi bi-arrow-down-square-fill" style="font-size:26px;"  onclick="themeopen()"></i>
+           
+          </label></p>
+        
+        </a> 
+  
+       <a href="login.html" class="sub-menu-links" onclick="blocknone2()">
+          <img src="image/logout.png" >
+          <p>Logout <i class="bi bi-box-arrow-left" style="font-size:26px; margin-left: 96px;"></i></p>
+        
+        </a> 
+        
+
+        
+  
+  
+        </div>
+      </div>
+  </nav>
+  
+  </header>
+  <form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+
+
+
+<div class="banner" id="menubanner" >
+  <div class="contenttextbannerbro" style="z-index: 0;">
+    <h2 >MENU</h2>
+    <h2 >MENU</h2>
+  </div>
+  <div class="animationjomastiaahh">
+    <div><div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div>  <div class="dotmernu"></div> </div>
+    <div> <div class="dotmernu"></div>  </div>
+    <div> <div class="dotmernu"></div>  </div>
+  </div>
+</div>
+
+
+<div class="changethemebtn" onclick="themeopen()">
+  <div class="gomaoo">
+    <i class="fa-solid fa-angle-up" style="transform:translateY(5px)translateX(5px)  rotate(90deg);"></i>
+  </div>
+</div>
+
+<div class="themepanel" id="chanasdasddsa">
+  <div class="close-theme-panel" onclick="themeclose()"><button type="button" class="btn-close "></button></div>
+  <div class="theme-panel-heading">THEME CUSTOMIZER</div>
+  <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">LIGHT BACKGROUND MODE</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square"  onclick="myFunction()">
+
+        </div>
+        <div class="themepanel-square3" onclick="myFunction1()">
+
+        </div>
+        <div class="themepanel-square2" onclick="black()">
+
+        </div>
+    </div>
+    <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">GRADIENT BACKGROUND MODE</div>
+  <span style="color: red ; font-size: 10px; text-align:center;letter-spacing: 3px; align-items: center; margin-left: 15px;">This mode is not available in menu page</span>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square4"  >
+
+        </div>
+        <div class="themepanel-square5" >
+
+        </div>
+        <div class="themepanel-square6" >
+
+        </div>
+        <div class="themepanel-square7">
+
+        </div>
+        <div class="themepanel-square8">
+
+        </div>
+        <div class="themepanel-square9" >
+
+        </div>
+    </div>
+    <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">GAUSSIAN TEXTURE BACKGROUND</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square10"onclick="gradientseven()" >
+
+        </div>
+        <div class="themepanel-square11" onclick="gradienteight()">
+
+        </div>
+        <div class="themepanel-square12" onclick="gradientnine()">
+
+        </div>
+        <div class="themepanel-square13" onclick="gradientten()">
+
+        </div>
+        <div class="themepanel-square14" onclick="gradienteleven()">
+
+        </div>
+        <div class="themepanel-square15" onclick="gradienttwelve()">
+
+        </div>
+        
+    </div>
+</div>
+
+<!-- _____________start_____________________________________________________________________________________________________ -->
+
+
+
+
+
+<div class="nav-img10">
+  <img class="img1bro" src="image/nav-1.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro" src="image/nav-2.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro" src="image/nav-3.png" style="margin-right: 10px;" height="160px">
+  <img  class="img1bro" src="image/nav-4.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro" src="image/nav-5.png" style="margin-right: 10px;" height="160px">
+  <img  class="img1bro" src="image/nav-6.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro" src="image/nav-7.png" style="margin-right: 10px;" height="160px">
+
+
+
+</div>
+<!-- _____________circle-image_____________________________________________________________________________________________________ -->
+
+
+<center>
+
+<div >
+    <form style="margin-top:60px ;" data-aos="fade-up">
+     
+      <input type="text" name="" id="search-item" placeholder="Search Products . . ." onkeyup="search()">
+      <i class="fas fa-search" ></i>
+    </form>
+ </div>
+ 
+ 
+</center>
+
+
+
+
+
+ <div class="cart-btn">
+  <i id="cart" class="fas fa-shopping-cart"></i>
+    <span id="cart1" class ="cart-quantity">0</span>
+ </div>
+
+
+<div class="cart-modal-overlay">
+  <div class="cart-modal">
+    <i id="close-btn" class="fas fa-times"></i>
+      <h1 class="cart-is-empty">Cart is empty</h1>
+    
+      <div class="product-rows">
+      
+      </div>
+      <hr>
+      <div class="total">
+        <h1 class="cart-total">TOTAL <span class="symbol-currency-main" onclick="showcurrency()"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+          <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+        </svg>
+         <div class="symbol-currency" id="symbol-currency">
+                                 <div style="cursor: pointer;" class="c-s-1"  onclick="showcurrencyone()">Rs</div>
+                                  <div style="cursor: pointer;" class="c-s-2" id="curr-s2" onclick="showcurrencytwo()">$</div>
+                                   <div style="cursor: pointer;" class="c-s-3" id="curr-s3" onclick="showcurrencythree()">€</div>
+                                   <div style="cursor: pointer;" class="c-s-4" id="curr-s4" onclick="showcurrencyfour()">£</div> 
+                                   <div style="cursor: pointer;" class="c-s-5" id="curr-s5" onclick="showcurrencyfive()">د.إ</div>
+                                    <div style="cursor: pointer;" class="c-s-6" id="curr-s6" onclick="showcurrencysix()">₹</div> 
+                                  </div>
+                                </span>
+      </h1>
+
+       
+      <hr>
+        <div class="totalarea">
+          <span class="total-price3" id="total-price3" >0</span>
+            <span class="total-price" id="total-pricesad" style="display: none;  ">0</span>
+            <span class="total-price5" id="redmenusd3"style="display: none;   ;" >0</span>
+            <div><span class="total-price6" id="total-price"style="display: none;   " >0</span></div>
+            <div><span id="redmenu31" class="total-price7" style="display: none;  ">0</span></div>
+           <div><span id="redmenu3" class="total-price8" style="display: none;   ">0</span></div>
+            
+        </div>
+
+       
+        
+          <hr>
+     
+              <div class="discountarea" id="discountarea">
+                <div>
+                  <span style="display: none;" id="dis-head" class="cart-total2">AFTER DISCOUNT</span>
+              </div>
+                <span id="asdss" class="total-price2"></span>
+                <div>
+                    <span id="asdasd" class="total-price4" style="display: none;"></span>
+              </div>
+              
+
+            </div>
+          
+                  <hr>
+                    <h3 class="code-head"> SHOP Rs. 1000 AND GET 30% DISCOUNT</h3>
+                <div class="discount-area"> 
+                      <button onclick="menudiscount()" class="btn-discount">get</button>
+                    
+                    </div>
+                    <hr>
+
+  
+              <button class="purchase-btn">PURCHASE</button>
+
+              
+      </div>
+    </div>
+
+</div>
+
+
+
+
+<div style="margin-top: 6px;"> </div>
+<center>
+
+  <div id="myBtnContainer" style="transition: 0.5s;">
+    <button class="btn active button-value" onclick="filterSelection('all')" data-aos="zoom-in"> Show all</button>
+    <button class="btn button-value" onclick="filterSelection('breakfast')" data-aos="zoom-in"> BreakFast</button>
+    <button class="btn button-value" onclick="filterSelection('launch')" data-aos="zoom-in"> Launch</button>
+    <button class="btn button-value" onclick="filterSelection('dinner')" data-aos="zoom-in"> Dinner</button>
+    <button class="btn button-value" onclick="filterSelection('beverages')" data-aos="zoom-in"> BEVERAGES</button>
+    <button class="btn button-value" onclick="filterSelection('fastfood')" data-aos="zoom-in"> FastFood</button>
+    <button class="btn button-value" onclick="filterSelection('pizza')" data-aos="zoom-in"> Pizza</button>
+  </div>
+       
+ 
+  <button id="plus" onclick="changeCounter(plus)" style="display: none;">+</button>
+
+</center>
+
+ <div class="row333" id="productsContainer" data-aos="fade-up" ></div>
+
+ 
+
+
+
+    
+
+
+
+
+
+
+<div style="margin-top: 100px; transition: 1s;"></div>
+
+
+<!-- ______________________RECIPIES_________________________________ -->
+<div id="uppercase" style="display: none;">
+
+  <div id="generic_price_table">
+<section>
+
+        <div class="container-fluid">
+
+            <!--BLOCK ROW START-->
+            <div class="gameefahs">
+                <div class="col-md-4" >
+
+                  <!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix">
+
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+
+                              <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Basic</span>
+                                </div>
+                                <!--//HEAD END-->
+
+                            </div>
+                            <!--//HEAD CONTENT END-->
+
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">99</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                          <ul>
+                              <li><span>200</span> recipies</li>
+                                <li><span>20</span> chefs</li>
+                                <li><span>12</span> Accounts</li>
+                                <li><span>7</span> days</li>
+                                <li><span>24/7</span> Service</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                          <a class=""  >Sign up</a>
+                        </div>
+                        <!--//BUTTON END-->
+
+                    </div>
+                    <!--//PRICE CONTENT END-->
+
+                </div>
+
+                <div class="col-md-4 BEEECHWALA">
+
+                  <!--PRICE CONTENT START-->
+                    <div class="generic_content active clearfix">
+
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+
+                              <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span style="font-size: 17px; font-weight: 800; margin-top: -10px;">CLICK TO SIGN UP OUR MEMBERSHIP</span>
+                                </div>
+                                <!--//HEAD END-->
+
+                            </div>
+                            <!--//HEAD CONTENT END-->
+
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">199</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                          <ul>
+                            <li><span>500</span> recipies</li>
+                                <li><span>50</span> chefs</li>
+                                <li><span>72</span> Accounts</li>
+                                <li><span>14</span> days</li>
+                                <li><span>24/7</span> Service</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+
+                        <!--BUTTON START2-->
+                        <div class="generic_price_btn clearfix">
+                          <a class=""  onclick="onpenpopopop()">Sign up</a>
+                        </div>
+                        <!--//BUTTON END-->
+
+                    </div>
+                    <!--//PRICE CONTENT END-->
+
+                </div>
+                <div class="col-md-4">
+
+                  <!--PRICE CONTENT START-->
+                    <div class="generic_content clearfix">
+
+                        <!--HEAD PRICE DETAIL START-->
+                        <div class="generic_head_price clearfix">
+
+                            <!--HEAD CONTENT START-->
+                            <div class="generic_head_content clearfix">
+
+                              <!--HEAD START-->
+                                <div class="head_bg"></div>
+                                <div class="head">
+                                    <span>Unlimited</span>
+                                </div>
+                                <!--//HEAD END-->
+
+                            </div>
+                            <!--//HEAD CONTENT END-->
+
+                            <!--PRICE START-->
+                            <div class="generic_price_tag clearfix">
+                                <span class="price">
+                                    <span class="sign">$</span>
+                                    <span class="currency">299</span>
+                                    <span class="cent">.99</span>
+                                    <span class="month">/MON</span>
+                                </span>
+                            </div>
+                            <!--//PRICE END-->
+
+                        </div>
+                        <!--//HEAD PRICE DETAIL END-->
+
+                        <!--FEATURE LIST START-->
+                        <div class="generic_feature_list">
+                          <ul>
+                            <li><span>1000</span> recipies</li>
+                                <li><span>100</span> chefs</li>
+                                <li><span>6</span> Accounts</li>
+                                <li><span>30</span> days</li>
+                                <li><span>24/7</span> Service</li>
+                            </ul>
+                        </div>
+                        <!--//FEATURE LIST END-->
+
+                        <!--BUTTON START-->
+                        <div class="generic_price_btn clearfix">
+                          <a class="" href="">Sign up</a>
+                        </div>
+                        <!--//BUTTON END-->
+
+                    </div>
+                    <!--//PRICE CONTENT END-->
+
+                </div>
+            </div>
+            <!--//BLOCK ROW END-->
+
+        </div>
+    </section>
+
+    </div>
+</div>
+<div id="brother"style="display: none;" >
+
+
+<div class="latest-recipie">
+
+
+<h1>WELCOME TO OUR RECIPIE COMMUNITY</h1>
+
+</div>
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+<div class="recipe-card_main">
+
+<div class="recipe-card">
+  <div id="recipe-card__cover" class="recipe-card__cover">
+    <div class="recipe-card__img">
+      <img
+        src="image/photo-1484723091739-30a097e8f929.jpg"
+        alt="Blueberry French Toast">
+    </div>
+    <div class="recipe-card__cover-details">
+      <div id="recipe-card__duration" class="recipe-card__duration">
+        <p><span>30</span>mins</p>
+      </div>
+      <div id="recipe-card__servings" class="recipe-card__servings">
+        <p><span>8</span>servings</p>
+      </div>
+      <div id="recipe-card__info" class="recipe-card__info">
+
+<a href="https://www.simplyrecipes.com/recipes/baked_blueberry_french_toast_casserole/" style="color: white;">
+        <div class="recipe-card__title">
+          <h1>Blueberry French Toast</h1>
+        </div>
+      </a>
+        <div class="recipe-card__description">
+          <p>Wonderful blueberry french toast recipe to serve for your whole family!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="recipe-card">
+<div id="recipe-card__cover" class="recipe-card__cover">
+<div class="recipe-card__img">
+<img
+  src="image/lasagna-recipe-11.jpg"
+  alt="Blueberry French Toast">
+</div>
+<div class="recipe-card__cover-details">
+<div id="recipe-card__duration" class="recipe-card__duration">
+  <p><span>60</span>mins</p>
+</div>
+<div id="recipe-card__servings" class="recipe-card__servings">
+  <p><span>4</span>servings</p>
+</div>
+<div id="recipe-card__info" class="recipe-card__info">
+  <div class="recipe-card__title">
+    <a href="https://simply-delicious-food.com/classic-homemade-lasagna/" style="color: white;">
+        <h1>Classic Made Lasagna</h1>
+  </div>
+    </a>
+  <div class="recipe-card__description">
+    <p>This classic homemade lasagna recipe is all-out comfort food!</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="recipe-card">
+<div id="recipe-card__cover" class="recipe-card__cover">
+<div class="recipe-card__img">
+<img
+  src="image/Baked-Cheese-Tortellini-2117.webp"
+  alt="Blueberry French Toast">
+</div>
+<div class="recipe-card__cover-details">
+<div id="recipe-card__duration" class="recipe-card__duration">
+  <p><span>30</span>mins</p>
+</div>
+<div id="recipe-card__servings" class="recipe-card__servings">
+  <p><span>8</span>servings</p>
+</div>
+<div id="recipe-card__info" class="recipe-card__info">
+  <div class="recipe-card__title">
+
+<a href="https://veronikaskitchen.com/baked-cheese-tortellini/" style="color: white;">
+    <h1> Baked Cheese Tortellini</h1>
+      </div>
+</a>
+  <div class="recipe-card__description">
+    <p>These amazing Baked Cheese Tortellini, loaded with hearty meat sauce!</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="recipe-card">
+<div id="recipe-card__cover" class="recipe-card__cover">
+<div class="recipe-card__img">
+<img
+  src="image/shrimp.jpg"
+  alt="Blueberry French Toast">
+</div>
+<div class="recipe-card__cover-details">
+<div id="recipe-card__duration" class="recipe-card__duration">
+  <p><span>70</span>mins</p>
+</div>
+<div id="recipe-card__servings" class="recipe-card__servings">
+  <p><span>8</span>servings</p>
+</div>
+<div id="recipe-card__info" class="recipe-card__info">
+  <div class="recipe-card__title">
+
+<a href="https://www.acouplecooks.com/shrimp-and-broccoli/" style="color: white;">
+    <h1>Shrimp And Broccoli</h1>
+  </div>
+</a>
+  <div class="recipe-card__description">
+    <p>This easy and simple honey garlic shrimp broccoli makes for super easy dinner!</p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+</div>
+<br><br><br><br>
+<div class="hero-video">
+<h1 class="recipice_bro_world">WORLD'S BEST RECIPIES <span>SIMPLE</span>  AND <span>TASTY</span> RECIPIES</h1>
+
+
+
+
+<video class="video-bg"  autoplay loop muted >
+  <source src="image/y2mate.com - Mr Fox Restaurant Promo Video_1080p.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+<section class="recipe_4col lists">
+<div class="wrapper">
+        <article>
+                      <figure>
+                        <a href="" title="Limonata Tarifi" class="sonidharti">
+                          <img width="294" height="196" src="image/recipi2.jpg">
+                        </a>
+                      </figure>
+                      <div class="post_details">
+                        <div class="cat_star">
+                          <a href="" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+                          <div class="reviews_short">
+                            <span title="5.00 Yildiz" class="stars_given">
+                              <span style="width: 100%"></span>
+                            </span>
+                          </div>
+                        </div>
+                        <h3>
+                          <a href="https://cookpad.com/us/recipes/11486883-kofta-karahi" title="Limonata Tarifi" class="naaaam">KOFTA KARAHI</a>
+                        </h3>
+                        <div class="other_details">
+                          <div class="view">
+                            <i class="fa fa-eye"></i> 1.2m
+                          </div>
+                          <div class="likes">
+                            <i class="fa fa-heart"></i> 158
+                          </div>
+                          <div class="user">
+                            <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+
+                              <img alt="Author Name"  src="image/Chef-Zakir.jpg"  style="height: 30px; width: 30px;">Chef Zakir
+
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+        </article>
+        <article>
+                  <figure>
+                    <a href="" title="Limonata Tarifi" class="sonidharti">
+                      <img width="294" height="196" src="image/recpici1.jpg">
+                    </a>
+                  </figure>
+                  <div class="post_details">
+                    <div class="cat_star">
+                      <a href="" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+                      <div class="reviews_short">
+                        <span title="5.00 Yildiz" class="stars_given">
+                          <span style="width: 100%"></span>
+                        </span>
+                      </div>
+                    </div>
+                    <h3>
+                      <a href="https://www.teaforturmeric.com/chicken-karahi/" title="Limonata Tarifi" class="naaaam">CHICKEN KARAHI</a>
+                    </h3>
+                    <div class="other_details">
+                      <div class="view">
+                        <i class="fa fa-eye"></i> 3.2B
+                      </div>
+                      <div class="likes">
+                        <i class="fa fa-heart"></i> 1223
+                      </div>
+                      <div class="user">
+                        <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                          <img alt="Author Name" src="image/zubaida-tariq.jpg" style="height: 30px; width: 30px; ">Chef Zubaida Tariq
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+        </article>
+        <article>
+              <figure>
+                <a href="" title="Limonata Tarifi" class="sonidharti">
+                  <img width="294" height="196" src="image/recipi3.jpg">
+                </a>
+              </figure>
+              <div class="post_details">
+                <div class="cat_star">
+                  <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+                  <div class="reviews_short">
+                    <span title="5.00 Yildiz" class="stars_given">
+                      <span style="width: 100%"></span>
+                    </span>
+                  </div>
+                </div>
+                <h3>
+                  <a href="https://cafedelites.com/chicken-tikka-masala/" title="Limonata Tarifi" class="naaaam">SPICY TIKKA</a>
+                </h3>
+                <div class="other_details">
+                  <div class="view">
+                    <i class="fa fa-eye"></i> 1.0B
+                  </div>
+                  <div class="likes">
+                    <i class="fa fa-heart"></i> 1820
+                  </div>
+                  <div class="user">
+                    <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                      <img alt="Author Name"  src="image/CHEFANWAR.jpg"  style="height: 30px; width: 30px; ">chef Shireen Anwar
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi4.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Launch dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.teaforturmeric.com/chicken-biryani/" title="Limonata Tarifi" class="naaaam">CHICKEBN BIRYANI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.7B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 12560
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; " >Chef Gulzar Begum
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi5.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://food.ndtv.com/recipe-chicken-korma-186274" title="Limonata Tarifi" class="naaaam">KORMA SALAN</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 704K
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 1205
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; ">Chef Zarnak Sidhwa
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/RECIPI6.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.lezizyemeklerim.com/limonata-tarifi" title="Limonata Tarifi" class="naaaam">SPICY HALEEM</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 1.0B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 12900
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32"  src="image/Chef-Zakir.jpg"  style="height: 30px; width: 30px;">Chef Zarnak Sidhwa
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipic7.jpeg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Lauch dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://recipes.timesofindia.com/recipes/hyderabadi-haleem/rs54672891.cms" title="Limonata Tarifi" class="naaaam">NIHARI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 102BK
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 1206
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFANWAR.jpg"  style="height: 30px; width: 30px; " >Chefs Tahir Chaudhary
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi8.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Launch dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://butteroverbae.com/lahori-chargha-recipe/" title="Limonata Tarifi" class="naaaam">CHICKEN CHARGA</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.02B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 18920
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32"  src="image/Chef-Zakir.jpg"  style="height: 30px; width: 30px;">Chef Saddat Siddique
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipic9.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.masala.tv/balochi-karahi/" title="Limonata Tarifi" class="naaaam">BALOCHI KARAHI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 2.2B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 12076
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/zubaida-tariq.jpg" style="height: 30px; width: 30px; ">Chef Mehboob Khan
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi10.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://www.deliciousmagazine.co.uk/recipes/baluchi-style-chicken-sajji/" title="Limonata Tarifi" class="naaaam">CHICKEN SAJJI</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.8B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 16720
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFANWAR.jpg"  style="height: 30px; width: 30px; ">Chef Naheed Ansari
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/recipi11.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Içecek Tarifleri</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://cooking.nytimes.com/recipes/7878-stir-fried-chicken-with-ketchup" title="Limonata Tarifi" class="naaaam">RED KETCHUUP CHICKEN</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 3.92B
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 120768
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; ">Chef Mehboob Khan
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <a href="" title="Limonata Tarifi" class="sonidharti">
+              <img width="294" height="196" src="image/PASINDEY.jpg">
+            </a>
+          </figure>
+          <div class="post_details">
+            <div class="cat_star">
+              <a href="https://www.lezizyemeklerim.com/yemek-tarifleri/icecek-tarifleri" class="cat_name" title="Tatli Tarifleri">Dinner dish</a>
+              <div class="reviews_short">
+                <span title="5.00 Yildiz" class="stars_given">
+                  <span style="width: 100%"></span>
+                </span>
+              </div>
+            </div>
+            <h3>
+              <a href="https://kfoods.com/recipes/beef-pasanda_rid3271" title="Limonata Tarifi" class="naaaam">PASINDEY</a>
+            </h3>
+            <div class="other_details">
+              <div class="view">
+                <i class="fa fa-eye"></i> 103.2k
+              </div>
+              <div class="likes">
+                <i class="fa fa-heart"></i> 1207
+              </div>
+              <div class="user">
+                <a href="https://www.lezizyemeklerim.com/mutfak/alev-turken" title="Latife yasar" class="naaaam2">
+                  <img alt="Author Name" width="32" height="32" src="image/CHEFGULZA.jpg"style="height: 30px; width: 30px; " >Chef Zarnak Sidhwa
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+</div>
+</section>
+
+
+
+</div>
+<!-- ______________________RECIPIES_________________________________ -->
+
+
+
+
+
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+<div class="slid43 container">
+  <div class="slidsd">
+
+      <div class="sli34">
+          <img src="image/slider1bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide2bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide3bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide4bro.png" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide5bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide7bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide8bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide9bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide10bro.jpg" alt=""></div>
+
+          <div class="sli34">
+            <img src="image/slider1bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide2bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide3bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide4bro.png" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide5bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide7bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide8bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide9bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide10bro.jpg" alt=""></div>
+
+  </div>
+</div>
+
+
+
+
+<div class="footerimgbro9" style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6) ) , url(image/hel.jpg); background-size: cover;">
+  <footer class="footer" style="background: transparent;"  >
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Restuarant</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="foodmard.html">Food-Mart</a></li>
+            <li><a href="chef.html">Chefs</a></li>
+            <li><a href="recipies.html">Recipies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="foodmard.html">Food</a></li>
+            <li><a href="foodmard.html">Bakery-item</a></li>
+            <li><a href="menu.html">Menu-items</a></li>
+            <li><a href="recipies.html">Restuarant</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://twitter.com/login"><i class="fab fa-twitter" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in" style="font-size: 20px; transform: translateY(3px);"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cpy-right text-center py-4" style="border-top: .3px solid rgb(97, 97, 97); background: transparent;">
+    <p style="font-size: 15px; letter-spacing: 5px;">© 2022 Food Diaries. All rights reserved | Design by <a href="https://www.facebook.com/AptechNorthKhi/" style="color: white;"> Abdullah , ali , haseeb</a> </p>
+    </div>
+</div>
+
+
+
+
+
+<!-- 
+<a href="#" class="add-to-car-icons">
+  <i id="cart" class="fas fa-shopping-cart"></i>
+</a> -->
+
+
+
+ 
+
+
+
+
+<a  class="archive" id="archive" onclick="archivePANEL()"> 
+  <i class="fas fa-archive" id="arhive"></i>
+</a>
+
+
+
+
+
+
+<div class="archivepanel" id="archvepanel">
+  <div class="closearchive" onclick="archivePANELclose()" >
+    <i class="fas fa-close" style="font-size: 20px;"></i>
+  </div>
+
+
+  <div class="archivepanelheading">
+    <h1>ARCHIVE</h1>
+  </div>
+
+
+    <div class="all-archive-item">
+
+
+
+      <div class="archive-item" id="archive1" style="display: none;" onclick="restore1()">     
+          <img src="dammoimage/archive-1.jpg" alt="">
+          <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+          <div class="archive-heading"><h2>KARAHI</h2></div>
+      </div>
+
+
+      <div class="archive-item" id="archive2" style="display: none;" onclick="restore2()">     
+        <img src="dammoimage/OMLET.jpg" alt="">
+        <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+        <div class="archive-heading"><h2>OMLET</h2></div>
+    </div>
+    
+      <div class="archive-item" id="archive3" style="display: none;" onclick="restore3()">     
+        <img src="dammoimage/SAJJI.jpg" alt="">
+        <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+        <div class="archive-heading"><h2>SAJJI</h2></div>
+    </div>
+
+    <div class="archive-item" id="archive4" style="display: none;" onclick="restore4()">     
+      <img src="dammoimage/SEEK KABAB.jpg" alt="">
+      <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+      <div class="archive-heading"><h2>SEEK KABAB</h2></div>
+  </div>
+
+      
+  <div class="archive-item" id="archive5" style="display: none;" onclick="restore5()">     
+    <img src="dammoimage/HALWAPURI.jpg" alt="">
+    <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+    <div class="archive-heading"><h2>HALWAPURI</h2></div>
+</div>
+     
+<div class="archive-item" id="archive6" style="display: none;" onclick="restore6()">     
+  <img src="dammoimage/CHOLA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>CHOLA</h2></div>
+</div>
+     
+<div class="archive-item" id="archive7" style="display: none;" onclick="restore7()">     
+  <img src="dammoimage/BREAD-SANDWICH.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BREAD-SANDWICH</h2></div>
+</div>
+     
+<div class="archive-item" id="archive8" style="display: none;" onclick="restore8()">     
+  <img src="dammoimage/PARATHA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2> PARATHA</h2></div>
+</div>
+     
+<div class="archive-item" id="archive9" style="display: none;" onclick="restore9()">     
+  <img src="dammoimage/CHICKEN-BIRYANI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>CHICKEN-BIRYANI</h2></div>
+</div>
+     
+<div class="archive-item" id="archive10" style="display: none;" onclick="restore10()">     
+  <img src="dammoimage/ANDA-CHANA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>ANDA-CHANA</h2></div>
+</div>
+<div class="archive-item" id="archive11" style="display: none;" onclick="restore11()">     
+  <img src="dammoimage/SPAGHETTI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>SPAGHETTI</h2></div>
+</div>
+<div class="archive-item" id="archive12" style="display: none;" onclick="restore12()">     
+  <img src="dammoimage/MALAI BOTI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>MALAI BOTI</h2></div>
+</div>
+
+<div class="archive-item" id="archive13" style="display: none;" onclick="restore13()">     
+  <img src="dammoimage/KABAB-PARATHA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>KABAB-PARATHA</h2></div>
+</div>
+<div class="archive-item" id="archive14" style="display: none;" onclick="restore14()">     
+  <img src="dammoimage/FRIED-EGG.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>FRIED-EGG</h2></div>
+</div>
+
+<div class="archive-item" id="archive15" style="display: none;" onclick="restore15()">     
+  <img src="dammoimage/VEGETABLE PIZZA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>VEGETABLE PIZZA</h2></div>
+</div>
+
+<div class="archive-item" id="archive16" style="display: none;" onclick="restore16()">     
+  <img src="dammoimage/LAGSAGNA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>LAGSAGNA</h2></div>
+</div>
+
+
+
+
+<div class="archive-item" id="archive53" style="display: none;" onclick="restore53()">     
+  <img src="dammoimage/MACRONI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>MACRONI</h2></div>
+</div>
+
+
+
+
+
+<div class="archive-item" id="archive18" style="display: none;" onclick="restore18()">     
+  <img src="dammoimage/BIRYANI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BIRYANI</h2></div>
+</div>
+
+
+<div class="archive-item" id="archive19" style="display: none;" onclick="restore19()">     
+  <img src="dammoimage/PILAO.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>PILAO</h2></div>
+</div>
+
+
+
+
+<div class="archive-item" id="archive20" style="display: none;" onclick="restore20()">     
+  <img src="menu-img/PASTA.png" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>PASTA</h2></div>
+</div>
+
+
+<div class="archive-item" id="archive21" style="display: none;" onclick="restore21()">     
+  <img src="dammoimage/BEEF-BIRYANI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BEEF-BIRYANI</h2></div>
+</div>
+<div class="archive-item" id="archive22" style="display: none;" onclick="restore22()">     
+  <img src="dammoimage/DAALCHAWAL.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>DAALCHAWAL</h2></div>
+</div>
+<div class="archive-item" id="archive23" style="display: none;" onclick="restore23()">     
+  <img src="dammoimage/HANDI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>HANDI</h2></div>
+</div>
+<div class="archive-item" id="archive24" style="display: none;" onclick="restore24()">     
+  <img src="dammoimage/NIHARI.jpeg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>NIHARI</h2></div>
+</div>
+<div class="archive-item" id="archive25" style="display: none;" onclick="restore25()">     
+  <img src="dammoimage/BIHARIBOTI.png" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BIHARIBOTI</h2></div>
+</div>
+<div class="archive-item" id="archive26" style="display: none;" onclick="restore26()">     
+  <img src="dammoimage/korma.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>korma</h2></div>
+</div>
+<div class="archive-item" id="archive27" style="display: none;" onclick="restore27()">     
+  <img src="dammoimage/CHAPLIKABAB.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>CHAPLIKABAB</h2></div>
+</div>
+<div class="archive-item" id="archive28" style="display: none;" onclick="restore28()">     
+  <img src="dammoimage/KALEJI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>KALEJI</h2></div>
+</div>
+<div class="archive-item" id="archive29" style="display: none;" onclick="restore29()">     
+  <img src="dammoimage/DAAL MAASH.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>DAAL MAASH</h2></div>
+</div>
+<div class="archive-item" id="archive30" style="display: none;" onclick="restore30()">     
+  <img src="dammoimage/TIKKA BOTI.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>TIKKA BOTI</h2></div>
+</div>
+
+<div class="archive-item" id="archive31" style="display: none;" onclick="restore31()">     
+  <img src="dammoimage/BURGUR.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BURGUR</h2></div>
+</div>
+<div class="archive-item" id="archive32" style="display: none;" onclick="restore32()">     
+  <img src="dammoimage/ZINGER.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>ZINGER</h2></div>
+</div>
+<div class="archive-item" id="archive33" style="display: none;" onclick="restore33()">     
+  <img src="dammoimage/SHAWARMA.png" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>SHAWARMA</h2></div>
+</div>
+<div class="archive-item" id="archive34" style="display: none;" onclick="restore34()">     
+  <img src="dammoimage/BROAST.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BROAST</h2></div>
+</div>
+<div class="archive-item" id="archive35" style="display: none;" onclick="restore35()">     
+  <img src="dammoimage/NUGGETS.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>NUGGETS</h2></div>
+</div>
+<div class="archive-item" id="archive36" style="display: none;" onclick="restore36()">     
+  <img src="dammoimage/FRIED CHICKEN.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>FRIED CHICKEN</h2></div>
+</div>
+<div class="archive-item" id="archive37" style="display: none;" onclick="restore37()">     
+  <img src="dammoimage/HAWAIIAN.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>HAWAIIAN PIZZA</h2></div>
+</div>
+<div class="archive-item" id="archive38" style="display: none;" onclick="restore38()">     
+  <img src="dammoimage/MARGHERITA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>MARGHERITA PIZZA</h2></div>
+</div>
+<div class="archive-item" id="archive39" style="display: none;" onclick="restore39()">     
+  <img src="dammoimage/mushroom-pizza-ricotta.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>MUSHROOM PIZZA</h2></div>
+</div>
+<div class="archive-item" id="archive40" style="display: none;" onclick="restore40()">     
+  <img src="dammoimage/chicken-fajita-pizza-2.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>CHICKEN FAJITA</h2></div>
+</div>
+<div class="archive-item" id="archive41" style="display: none;" onclick="restore41()">     
+  <img src="dammoimage/SEAFOOD.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>SEAFOOD PIZZA</h2></div>
+</div>
+<div class="archive-item" id="archive42" style="display: none;" onclick="restore42()">     
+  <img src="dammoimage/CHEEZPIZZA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>CHEESE PIZZA</h2></div>
+</div>
+<div class="archive-item" id="archive43" style="display: none;" onclick="restore43()">     
+  <img src="dammoimage/BAR B Q.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>BAR B Q CHICKEN</h2></div>
+</div>
+<div class="archive-item" id="archive44" style="display: none;" onclick="restore44()">     
+  <img src="dammoimage/APPLE.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>APPLE JUICE</h2></div>
+</div>
+<div class="archive-item" id="archive45" style="display: none;" onclick="restore45()">     
+  <img src="dammoimage/STRAWBERRY.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>STRAWBERRY JUICE</h2></div>
+</div>
+<div class="archive-item" id="archive46" style="display: none;" onclick="restore46()">     
+  <img src="dammoimage/SUGARCANE.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>juice</h2></div>
+</div>
+<div class="archive-item" id="archive47" style="display: none;" onclick="restore47()">     
+  <img src="dammoimage/COCALA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>COCACOLA</h2></div>
+</div>
+<div class="archive-item" id="archive48" style="display: none;" onclick="restore48()">     
+  <img src="dammoimage/REDBULL.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>REDBULL</h2></div>
+</div>
+<div class="archive-item" id="archive49" style="display: none;" onclick="restore49()">     
+  <img src="dammoimage/TEA.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>TEA</h2></div>
+</div>
+<div class="archive-item" id="archive50" style="display: none;" onclick="restore50()">     
+  <img src="dammoimage/COFFEE.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>COFFEE</h2></div>
+</div>
+<div class="archive-item" id="archive51" style="display: none;" onclick="restore51()">     
+  <img src="dammoimage/CAPACHINO.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>CAPPUCCINO</h2></div>
+</div>
+<div class="archive-item" id="archive52" style="display: none;" onclick="restore52()">     
+  <img src="dammoimage/frenchfries.jpg" alt="">
+  <div class="restore-button"><i class="fas fa-trash-arrow-up" style="font-size: 30px;"></i></div>
+  <div class="archive-heading"><h2>FRENCH FRIES</h2></div>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>  
+
+</div>
+
+
+<a  class="wishlist" onclick="click2()"> 
+  <i class="fas fa-heart" id="heartwishlist"></i>
+  <div id="Counter" class="counterheart">0</div>
+</a>
+
+
+<div class="sidepanel " id="sidepanels">
+  <i class="fas fa-close" id="closepanel" onclick="closepanel()"></i>
+  <br><br><br>
+  <div class="panel-heading">
+  <h1>FAVOURATES</h1>
+  </div>
+<hr style="background: white;">
+
+
+<div class="menu-item1" id="menu-item1">
+  <div class="close-fav-item" onclick="closemenuitem()" style="cursor: pointer;"> 
+    <i class="fas fa-close" ></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/chickenkarahi.png" >
+  </div>
+  <div class="name">
+   <h2>KARAHI</h2>
+   
+  </div>
+ 
+</div>
+
+
+<div class="menu-item1" id="menu-item2">
+  <div class="close-fav-item" onclick="closemenuitem2()" style="cursor: pointer;"> 
+    <i class="fas fa-close" ></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/omlet.png" >
+  </div>
+  <div class="name">
+   <h2>OMLET</h2>
+  </div>
+
+ 
+</div>
+
+
+<div class="menu-item1" id="menu-item3">
+  <div class="close-fav-item" onclick="closemenuitem3()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/5.png" >
+  </div>
+  <div class="name">
+   <h2>SAJJI</h2>
+  </div>
+  
+</div>
+
+
+<div class="menu-item1" id="menu-item4">
+  <div class="close-fav-item" onclick="closemenuitem4()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/golakabab.png" >
+  </div>
+  <div class="name">
+   <h2>SEEK-KABAB</h2>
+  </div>
+ 
+</div>
+
+
+<div class="menu-item1" id="menu-item5">
+  <div class="close-fav-item" onclick="closemenuitem5()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/ha;wapuri.png" >
+  </div>
+  <div class="name">
+   <h2>HALWA-PURI</h2>
+  </div>
+
+</div>
+
+
+<div class="menu-item1" id="menu-item6">
+  <div class="close-fav-item" onclick="closemenuitem6()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/cholachana.png" >
+  </div>
+  <div class="name">
+   <h2>CHOLA-CHANA</h2>
+  </div>
+ 
+</div>
+
+<div class="menu-item1" id="menu-item7">
+  <div class="close-fav-item" onclick="closemenuitem7()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/bread-sand-wich.png" >
+  </div>
+  <div class="name">
+   <h2>BREAD-SANDWICH</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item8">
+  <div class="close-fav-item" onclick="closemenuitem8()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/paratha.png" >
+  </div>
+  <div class="name">
+   <h2>PARATHA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item9">
+  <div class="close-fav-item" onclick="closemenuitem9()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/CHICKENBIRYANI.png" >
+  </div>
+  <div class="name">
+   <h2>CHICKEN-BIRYANI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item10">
+  <div class="close-fav-item" onclick="closemenuitem10()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/andachana.png" >
+  </div>
+  <div class="name">
+   <h2>ANDA-CHANA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item11">
+  <div class="close-fav-item" onclick="closemenuitem11()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/3.png" >
+  </div>
+  <div class="name">
+   <h2>SPAGHETTI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item12">
+  <div class="close-fav-item" onclick="closemenuitem12()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/4.png" >
+  </div>
+  <div class="name">
+   <h2>MALAI-BOTI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item13">
+  <div class="close-fav-item" onclick="closemenuitem13()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/kababparatha.png" >
+  </div>
+  <div class="name">
+   <h2>KABAB-PARATHA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item14">
+  <div class="close-fav-item" onclick="closemenuitem14()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/friedegg.png" >
+  </div>
+  <div class="name">
+   <h2>FRIED-EGG</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item15">
+  <div class="close-fav-item" onclick="closemenuitem15()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/7.png" >
+  </div>
+  <div class="name">
+   <h2>VEGETABLE-PIZZA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item16">
+  <div class="close-fav-item" onclick="closemenuitem16()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/66.png" >
+  </div>
+  <div class="name">
+   <h2>LAGSAGNA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item17">
+  <div class="close-fav-item" onclick="closemenuitem17()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/MACRONI.png" >
+  </div>
+  <div class="name">
+   <h2>MACRONI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item18">
+  <div class="close-fav-item" onclick="closemenuitem18()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/BIRYANI.png" >
+  </div>
+  <div class="name">
+   <h2>BIRYANI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item19">
+  <div class="close-fav-item" onclick="closemenuitem19()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/PILAO.png" >
+  </div>
+  <div class="name">
+   <h2>PILAO</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item20">
+  <div class="close-fav-item" onclick="closemenuitem20()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/PASTA.png" >
+  </div>
+  <div class="name">
+   <h2>PASTA</h2>
+  </div>
+ 
+</div>
+
+<div class="menu-item1" id="menu-item21">
+  <div class="close-fav-item" onclick="closemenuitem21()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/BEEFBIRYANI.png" >
+  </div>
+  <div class="name">
+   <h2>BEEF-BIRYANI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item22">
+  <div class="close-fav-item" onclick="closemenuitem22()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/daalchawal.png" >
+  </div>
+  <div class="name">
+   <h2>DAALCHAWAL</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item23">
+  <div class="close-fav-item" onclick="closemenuitem23()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/handi.png" >
+  </div>
+  <div class="name">
+   <h2>HANDI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item24">
+  <div class="close-fav-item" onclick="closemenuitem24()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/nihari.png" >
+  </div>
+  <div class="name">
+   <h2>NIHARI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item25">
+  <div class="close-fav-item" onclick="closemenuitem25()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/bihariboti.png" >
+  </div>
+  <div class="name">
+   <h2>BIHARI-BOTI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item26">
+  <div class="close-fav-item" onclick="closemenuitem26()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/korma.png" >
+  </div>
+  <div class="name">
+   <h2>korma</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item27">
+  <div class="close-fav-item" onclick="closemenuitem27()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/chaplikabab.png" >
+  </div>
+  <div class="name">
+   <h2>CHAPLI-KABAB</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item28">
+  <div class="close-fav-item" onclick="closemenuitem28()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/kaleji.png" >
+  </div>
+  <div class="name">
+   <h2>KALEJI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item29">
+  <div class="close-fav-item" onclick="closemenuitem29()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/daalmaash.png" >
+  </div>
+  <div class="name">
+   <h2>DAAL-MAASH</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item30">
+  <div class="close-fav-item" onclick="closemenuitem30()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/tikkaboti.png" >
+  </div>
+  <div class="name">
+   <h2>TIKKA-BOTI</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item31">
+  <div class="close-fav-item" onclick="closemenuitem31()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/bugur.png" >
+  </div>
+  <div class="name">
+   <h2>BURGUR</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item33">
+  <div class="close-fav-item" onclick="closemenuitem32()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/zinger.png" >
+  </div>
+  <div class="name">
+   <h2>ZINGER</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item33">
+  <div class="close-fav-item" onclick="closemenuitem33()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/shawarma.png" >
+  </div>
+  <div class="name">
+   <h2>SHAWARMA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item34">
+  <div class="close-fav-item" onclick="closemenuitem34()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/broast.png" >
+  </div>
+  <div class="name">
+   <h2>BROAST</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item35">
+  <div class="close-fav-item" onclick="closemenuitem35()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/nuggets.png" >
+  </div>
+  <div class="name">
+   <h2>NUGGETS</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item36">
+  <div class="close-fav-item" onclick="closemenuitem36()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/friedchicken.png" >
+  </div>
+  <div class="name">
+   <h2>FRIED-CHICKEN</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item37">
+  <div class="close-fav-item" onclick="closemenuitem37()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/hawaiian.png" >
+  </div>
+  <div class="name">
+   <h2>HAWAIIAN-PIZZA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item38">
+  <div class="close-fav-item" onclick="closemenuitem38()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/MARGHERITA .png" >
+  </div>
+  <div class="name">
+   <h2>MARGHERITA-PIZZA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item39">
+  <div class="close-fav-item" onclick="closemenuitem39()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/mushroom.png" >
+  </div>
+  <div class="name">
+   <h2>MUSHROOM-PIZZA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item40">
+  <div class="close-fav-item" onclick="closemenuitem40()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/chickenfajita.png" >
+  </div>
+  <div class="name">
+   <h2>CHICKEN-FAJITA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item41">
+  <div class="close-fav-item" onclick="closemenuitem41()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/seafood.png" >
+  </div>
+  <div class="name">
+   <h2>SEAFOOD-PIZZA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item42">
+  <div class="close-fav-item" onclick="closemenuitem42()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/cheese1.png" >
+  </div>
+  <div class="name">
+   <h2>CHEESE-PIZZA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item43">
+  <div class="close-fav-item" onclick="closemenuitem43()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/barbq.png" >
+  </div>
+  <div class="name">
+   <h2>BAR-B-Q CHICKEN</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item44">
+  <div class="close-fav-item" onclick="closemenuitem44()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/APPLE.png" >
+  </div>
+  <div class="name">
+   <h2>APPLE-JUICE</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item45">
+  <div class="close-fav-item" onclick="closemenuitem45()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/depositphotos_78074994-stock-photo-glass-of-fresh-strawberry-juice-removebg-preview.png" >
+  </div>
+  <div class="name">
+   <h2>STRAWBERRY-JUICE</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item46">
+  <div class="close-fav-item" onclick="closemenuitem46()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/SUGARCANE.png" >
+  </div>
+  <div class="name">
+   <h2>SUGARCANE-JUICE</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item47">
+  <div class="close-fav-item" onclick="closemenuitem47()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/COCA.png" >
+  </div>
+  <div class="name">
+   <h2>COCACOLA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item48">
+  <div class="close-fav-item" onclick="closemenuitem48()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/RED.png" >
+  </div>
+  <div class="name">
+   <h2>REDBULL</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item49">
+  <div class="close-fav-item" onclick="closemenuitem49()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/TEA.png" >
+  </div>
+  <div class="name">
+   <h2>TEA</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item50">
+  <div class="close-fav-item" onclick="closemenuitem50()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/COFFEE.png" >
+  </div>
+  <div class="name">
+   <h2>COFFEE</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item51">
+  <div class="close-fav-item" onclick="closemenuitem51()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="menu-img/CAPACINO.png" >
+  </div>
+  <div class="name">
+   <h2>CAPPUCCINO</h2>
+  </div>
+ 
+</div>
+<div class="menu-item1" id="menu-item52">
+  <div class="close-fav-item" onclick="closemenuitem52()"> 
+    <i class="fas fa-close"></i>
+  </div>
+  <div class="image">
+    <img src="image/8.png" >
+  </div>
+  <div class="name">
+   <h2>FRENCH-FRIES</h2>
+  </div>
+ 
+ 
+</div>
+
+</div>
+
+</div>
+
+<a href="#" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+
+<div class="boxyou" id="boxxc" style="display: none;">
+
+
+  <div class="popup-teen" id="teenfirstad">
+    <div class="contentBox-teen" >
+      <div class="closepopop-old" onclick="teengayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/teenage-ad-removebg-preview.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>SPECIAL OFFER FOR TEENAGERS</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- __________________________________________________________________________________________________________________ -->
+
+
+  <div class="popop-young" id="teenfirstad2">
+    <div class="contentBox-young" >
+      <div class="closepopop-old" onclick="younggayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/young-addd.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>OFFERS FOR YOUNGSTER IN FAST FOOD</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="popop-old" id="teenfirstadasd3">
+    <div class="contentBox-old" >
+        <div class="closepopop-old" onclick="adoldgayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/OLD-AD.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>OFFERS FOR OLD (WOMANS/MANS)</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="popop-everyone" id="teenfirstadasd4">
+
+    <div class="closepopop-everyone" onclick="adeverygayad()"><i class="fas fa-close"></i></div>
+    <div class="imag-ad-four">
+      <img src="dammoimage/Poster1.png" alt="">
+    </div>
+  </div> 
+</div>
+
+<button onclick="boxxx()" style="display: none;">clickbro</button>
+
+<script>
+  document.getElementById("boxxc").style.display = sessionStorage.getItem("aasdasdsd");
+   function boxxx() {
+   document.getElementById("boxxc").style.display = "none";
+   sessionStorage.setItem("aasdasdsd","none");
+   
+   }
+
+</script>
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+  
+ 
+<script src="javascript/jaqury.js"></script>
+
+<script>
+
+
+
+
+
+function archivePANEL(){
+
+  var arhive = document.getElementById("arhive");
+   
+ 
+    
+      document.getElementById("archvepanel").classList.add("archvepanelactive");
+   
+    
+    
+   
+
+
+
+
+    
+   }
+
+
+function archivePANELclose(){
+
+  var arhive = document.getElementById("arhive");
+   
+ 
+   
+
+
+      document.getElementById("archvepanel").classList.remove("archvepanelactive");
+
+
+    
+   }
+
+  
+  
+</script>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:70,
+      duration:1400
+      
+    });
+  </script>
+
+<script>
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+if (window.pageYOffset > 100) {
+  toTop.classList.add("active");
+} else {
+  toTop.classList.remove("active");
+}
+})
+
+ function click2(){
+    document.getElementById("sidepanels").classList.add("activepanel");
+
+ }
+ function closepanel(){
+  document.getElementById("sidepanels").classList.remove("activepanel");
+ }
+
+
+
+const heart = document.querySelector(".wishlist");
+  
+  window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    heart.classList.add("active");
+  } else {
+    heart.classList.remove("active");
+  }
+  })
+
+
+const archive = document.querySelector(".archive");
+  
+  window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    archive.classList.add("active");
+  } else {
+    archive.classList.remove("active");
+  }
+  })
+
+   window.addEventListener('load', () => {
+
+
+
+const name = sessionStorage.getItem('NAME');
+const email = sessionStorage.getItem('EMAIL');
+const AGE = sessionStorage.getItem('AGE');
+
+document.getElementById('result-name').innerHTML = name;
+document.getElementById('result-email').innerHTML = email;
+document.getElementById('AGE').innerHTML = AGE;
+})
+</script>
+       
+    
+
+<script>
+  
+window.onload = () => {
+  filterSelection("all");
+};
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+
+<script>
+  document.querySelector('#search-icon').onclick = () =>{
+  document.querySelector('#search-form').classList.toggle('active');
+}
+
+document.querySelector('#close').onclick = () =>{
+  document.querySelector('#search-form').classList.remove('active');
+}
+</script>
+
+  
+<script src="javascript/card.js"></script>
+<script src="javascript/java.js"></script>
+<script src="javascript/JSON.js"></script>
+<script src="javascript/AddToCart.js"></script>
+<script src="javascript/menu-function.js"></script>
+<script src="javascript/menu-function.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+
+    
+  </body>
+</html>

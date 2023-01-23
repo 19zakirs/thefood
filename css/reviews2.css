@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapperreviews{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapperreviews .boxreview{
+  background:  var(--review-cards);
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+.wrapperreviews .boxreview i.quote{
+  font-size: 20px;
+  color: var(--main-color);
+}
+.wrapperreviews .boxreview .contentreview{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.boxreview .inforeview .nameeview{
+  font-weight: 600;
+  font-size: 17px;
+  color: hsl(0, 1%, 25%);
+}
+.boxreview .inforeview .jobeview{
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0, 0%, 18%);
+}
+.boxreview .inforeview .starsreview{
+  margin-top: 2px;
+}
+.boxreview .inforeview .starsreview i{
+  color: hsl(0, 7%, 42%);
+}
+.boxreview .contentreview .imagereview{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #17a2b8;
+  border-radius: 50%;
+}
+.contentreview .imagereview img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.boxreview:hover .contentreview .imagereview img{
+  border-color: #fff;
+}
+@media (max-width: 1045px) {
+  .wrapperreviews .boxreview{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .wrapperreviews .boxreview{
+    width: 100%;
+  }
+}

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <link rel="shortcut icon" type="image/png" href="image/logobro.png">
+    <title>FOOD DIARIES - LOGIN</title>
+    <link rel="icon" href="img/favicon.png">
+   <style>
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: wow 10s infinite;
+    overflow-y: hidden;
+}
+
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   object-fit: cover;
+ 
+   
+}
+
+.container32 {
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0) ;
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    z-index: 23;
+    transform: scale(.9);
+    margin-top: -15px;
+  
+}
+
+
+
+.form {
+    padding: 10px 20px;
+
+}
+
+.form h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #ffc107;
+    -webkit-text-stroke: black .1px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.625);
+    
+  }
+
+.form-field {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    transform: scale(1.1);
+}
+
+.form-field label {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+	margin-top:15px;
+	font-size:16px;
+	font-weight:bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    -webkit-text-stroke: black .3px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.625);
+}
+
+.form-field input {
+
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+ #hey input{
+
+    border-radius: 3px;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    color: white;
+    letter-spacing: 4px;
+}
+#hey2 input{
+
+border-radius: 3px;
+border-left: none;
+border-right: none;
+padding: 10px;
+margin-bottom: 5px;
+font-size: 14px;
+display: block;
+width: 100%;
+background: transparent;
+color: white;
+letter-spacing: 4px;
+}
+#hey3 input{
+
+border-radius: 3px;
+border-left: none;
+border-right: none;
+padding: 10px;
+margin-bottom: 5px;
+font-size: 14px;
+display: block;
+width: 100%;
+background: transparent;
+color: white;
+letter-spacing: 4px;
+}
+#hey4 input{
+
+border-radius: 3px;
+border-left: none;
+border-right: none;
+padding: 10px;
+margin-bottom: 5px;
+font-size: 14px;
+display: block;
+width: 100%;
+background: transparent;
+color: white;
+letter-spacing: 4px;
+}
+#hey5 input{
+
+border-radius: 3px;
+border-left: none;
+border-right: none;
+padding: 10px;
+margin-bottom: 5px;
+font-size: 14px;
+display: block;
+width: 100%;
+background: transparent;
+color: white;
+letter-spacing: 4px;
+}
+#hey12 input{
+
+border-radius: 3px;
+border-left: none;
+border-right: none;
+padding: 10px;
+margin-bottom: 5px;
+font-size: 14px;
+display: block;
+width: 100%;
+background: transparent;
+color: white;
+letter-spacing: 4px;
+}
+  
+
+
+
+
+
+
+#hey13 input{
+
+border-radius: 3px;
+border-left: none;
+border-right: none;
+padding: 10px;
+margin-bottom: 5px;
+font-size: 14px;
+display: block;
+width: 100%;
+background: transparent;
+color: white;
+letter-spacing: 4px;
+}
+#hey32 input{
+
+        border: solid 1px #f0f0f0;
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        background: #ffc107;
+        transition: 0.5s;
+        font-weight: 900;
+}
+#hey32:hover input{
+    background: #bf9002;
+    color: rgb(255, 255, 255);
+    border: solid 1px #ffffff;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: var(--warning-color);
+    border-bottom: 2px solid var(--warning-color);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-text-stroke: black .3px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.158);
+    font-weight: 900;
+    font-family: poppins , sans-serif;
+}
+
+.btn:hover {
+    background: #0069d9;
+    border-bottom: 2px solid #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn1 {
+    width: 100%;
+    padding: 3%;
+    background: var(--warning-color);
+    border-bottom: 2px solid var(--warning-color);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-text-stroke: black .3px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.158);
+    font-weight: 900;
+    font-family: poppins , sans-serif;
+}
+
+.btn1:hover {
+    background: #0069d9;
+    border-bottom: 2px solid #0069d9;
+    cursor: pointer;
+}
+
+.btn1:focus {
+    outline: none;
+}
+
+
+@media(max-width:700px){
+    .back-video{
+        display: none;
+    }
+    body{
+        background-image: url(image/banner1.jpg);
+    }
+}
+.disgayab{
+    display: none;
+}
+.disagaya{
+    display: block;
+}
+.loge{
+    display: none
+}
+.logp{
+    display: none
+}
+.loginnew{
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+.loginnew:hover{
+    color: #ffc107;
+}
+   </style>
+   
+</head>
+
+<body>
+    
+<video autoplay loop muted plays-inline class="back-video">
+<source src="image/y2mate.com - Brand Promo Video  Food TV Commercial  Brand Video  Brand Video Teaser By Ministry of Marketing_1080p.mp4" type="video/mp4">
+</video>
+
+    <div class="container32">
+        <form id="signup" class="form" method="get">
+            <h1 id="loginhead2">Sign Up</h1>
+            <h1  style="display: none;" id="loginhead">Login</h1>
+        
+            <div class="form-field" id="hey">
+                <label for="username">Username:</label>
+                <input type="text"  name="name" id="username" placeholder="Choose a username"  autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field emailjo" id="hey2" >
+                <label for="Email">Email:</label>
+                <input type="text" name="email" id="email" value="" placeholder="Enter your email">
+                <small></small>
+            </div>
+
+            <div class="form-field " id="hey12" style="display: none;">
+                <label for="Email">Email:</label>
+                <input type="text" name="email" id="emaillogin" value="" placeholder="Enter your email">
+                <small></small>
+            </div>
+            
+            <div class="form-field " id="hey13" style="display: none;">
+                <label for="password">Password:</label>
+                <input type="password" name="password" value="" id="passwordlogin" value="Sign Up"
+                    placeholder="Enter a strong password">
+                <small></small>
+            </div>
+
+            <div class="form-field agejo" id="hey3">
+                <label for="Email ">AGE:</label>
+                <input type="number" name="AGE" id="AGE" autocomplete="off" placeholder="Enter your AGE">
+                <small></small>
+            </div>
+
+            <div class="form-field pasjo" id="hey4">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" value="RUNwan!2"
+                    placeholder="Enter a strong password">
+                <small></small>
+            </div>
+
+            <div class="form-field cpjo" id="hey5">
+                <label for="username ">Confirm Password:</label>
+                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off"
+                    placeholder="Reenter your password">
+                <small></small>
+            </div>
+        
+
+            
+            <div class="form-field" id="mainntn2" >
+                <input type="submit"  value="Sign Up" class="btn">
+            </div>
+
+                
+            <div class="form-field" style="display: none;"  id="mainntn">
+                <input type="submit"  value="Login" class="btn1" onclick="jojorabit()">
+            </div>
+
+
+            <button onclick="loginjomasti()" class="loginnew" id="logdown">Login</button>
+            <button onclick="loginjomasti()" class="loginnew" id="logdown2" style="display: none;">create account</button>
+          
+
+
+        </form>
+    </div>
+
+
+
+   
+
+
+
+       
+                <span id="result-emailjs" style="font-size:1px; color: white; z-index: -10000" ></span>
+             
+
+                <h2 id="pass" style="z-index: -10000; font-weight: 34;"></h2>
+
+    
+
+
+
+    
+
+
+     
+
+ <script>
+
+
+
+
+
+
+
+
+
+
+
+var usernameEl = document.getElementById('username');
+var emailEl = document.getElementById('email');
+var passwordEl = document.getElementById('password');
+var confirmPasswordEl = document.getElementById('confirm-password');
+
+
+var form = document.getElementById('signup');
+
+
+
+var showError = function(input, message) 
+{
+    //get the form-field element
+    var formField = input.parentElement;
+
+    //add the error class
+    formField.classList.remove('success');
+    formField.classList.add('error');
+
+    //show the error message
+    var error = formField.querySelector('small');
+    error.textContent = message;
+};
+
+
+
+var showSuccess = function(input) {
+    var formField = input.parentElement;
+
+    formField.classList.remove('error');
+    formField.classList.add('success');
+
+    var error = formField.querySelector('small');
+    error.textContent = '';
+};
+
+
+
+
+var isEmailValid = function(email) {
+    var re = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$");
+    return re.test(email); 
+};
+
+
+var isPasswordSecure = function(password) {
+    var re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+    return re.test(password);
+};
+
+
+var isRequired = function(value) {
+    if (value === '')
+        return false;
+    else
+        return true;
+};
+
+
+var isBetween = function(length, min, max) { 
+    if(length < min || length > max)
+        return false;
+    else
+        return true;
+};
+
+
+
+
+var checkUsername = function() {
+    
+    var valid = false;
+    
+    var min = 3,
+        max = 8;
+    
+    var username = usernameEl.value.trim();
+    
+    if (!isRequired(username)) {
+        showError(usernameEl, 'Username cannot be blank.'); 
+    }    
+    else if (!isBetween(username.length, min, max)) {
+        showError(usernameEl, 'Username must be between 3 and 8 characters.') 
+    } 
+    else {
+        showSuccess(usernameEl); 
+        valid = true;
+    }
+    return valid;
+};
+
+
+
+
+
+var checkEmail = function() {
+    var valid = false; 
+    
+    var email = emailEl.value.trim(); 
+
+    if (!isRequired(email)) 
+    {
+        showError(emailEl, 'Email cannot be blank.'); 
+    } 
+    else if (!isEmailValid(email)) 
+    {
+        showError(emailEl, 'Email is not valid.');  
+    }
+    else 
+    { 
+        showSuccess(emailEl); 
+        valid = true;
+    }
+    return valid;
+};
+
+
+
+
+
+var checkPassword = function() {
+    
+    var valid = false;
+    
+    var password = passwordEl.value.trim();
+    
+    if (!isRequired(password)) 
+    {
+        showError(passwordEl, 'Password cannot be blank.');  
+    } 
+    else if (!isPasswordSecure(password)) 
+    {
+        showError(passwordEl, 'Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)'); 
+    } 
+    else 
+    {
+        showSuccess(passwordEl); 
+        valid = true;
+    }
+    return valid;
+};
+
+
+
+
+
+var checkConfirmPassword = function() {
+    
+    var valid = false;
+    
+    // Check Confirm Password
+    
+    var confirmPassword = confirmPasswordEl.value.trim(); 
+    var password = passwordEl.value.trim();
+    
+    if (!isRequired(confirmPassword)) 
+    {
+    showError(confirmPasswordEl, 'Please enter the password again'); 
+    } 
+    else if (password !== confirmPassword) 
+    {
+    showError(confirmPasswordEl, 'The password does not match'); 
+    } 
+    else 
+    {
+    showSuccess(confirmPasswordEl); 
+    valid = true;
+    }
+    return valid; 
+};
+
+
+
+
+
+form.addEventListener('submit', function (e) 
+{
+    //Prevent the form from submitting
+    e.preventDefault();
+    
+    //Validate Forms
+    var isUsernameValid = checkUsername(); 
+    var isEmailValid = checkEmail(); 
+    var isPasswordValid = checkPassword(); 
+    var isConfirmPasswordValid = checkConfirmPassword();
+    
+    var isFormvalid = isUsernameValid 
+                   && isEmailValid 
+                   && isPasswordValid 
+                   && isConfirmPasswordValid;
+
+    //Submit to the server if the form is valid
+    
+    if (isFormvalid) 
+    {
+    const name = document.getElementById('username').value;   
+    const email = document.getElementById('email').value;
+    const AGE = document.getElementById('AGE').value;
+    const password = document.getElementById('password').value;
+    sessionStorage.setItem("NAME", name);
+    sessionStorage.setItem("EMAIL", email);
+    sessionStorage.setItem("AGE", AGE);
+    sessionStorage.setItem("password", password);
+    window.location = "index.html";
+    }
+});
+
+
+
+
+
+const debounce = (fn, delay = 500) => {
+    let timeoutId; 
+    return (...args) => {
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+    }
+    timeoutId = setTimeout(() => {
+        fn.apply(null, args) 
+    }, delay);
+};
+};
+
+
+
+
+
+form.addEventListener('input', debounce(function (e) 
+{ 
+    switch (e.target.id) 
+    { 
+    case 'username':
+        checkUsername();
+        break; 
+    case 'email':
+        checkEmail();
+        break; 
+    case 'password':
+        checkPassword();
+        break; 
+    case 'confirm-password':
+        checkConfirmPassword(); 
+        break;
+    }
+}));
+
+const aemail = sessionStorage.getItem('EMAIL');
+const password = sessionStorage.getItem('password');
+
+
+window.addEventListener('load', () => {
+
+document.getElementById('result-emailjs').innerHTML = aemail;
+document.getElementById('pass').innerHTML = password;
+})
+
+
+function jojorabit(){
+
+var emaillogin = document.getElementById("emaillogin").value; 
+var resultbroshro = document.getElementById("result-emailjs");
+var passb = document.getElementById("pass");
+ var passwordlogin = document.getElementById("passwordlogin").value;
+
+
+
+	
+    if(emaillogin === aemail && passwordlogin === password) {
+            window.location = "index.html";
+        }
+        else if (emaillogin == "abdullah" &&  passwordlogin == "abdullah"){
+
+            window.location = "index.html";
+        }
+        else{
+            alert("invalid account");
+        }
+        }
+
+
+
+
+
+
+
+var a ;
+function loginjomasti(){
+    document.getElementById("hey").classList.toggle("disgayab");
+    document.getElementById("hey2").classList.toggle("disgayab");
+    document.getElementById("hey3").classList.toggle("disgayab");
+    document.getElementById("hey4").classList.toggle("disgayab");
+    document.getElementById("hey5").classList.toggle("disgayab");
+  
+
+    if(a==0){
+    document.getElementById("hey13").style.display = "none";
+    document.getElementById("hey12").style.display = "none";
+    document.getElementById("loginhead").style.display = "none";
+    document.getElementById("loginhead2").style.display = "block";
+    document.getElementById("logdown").style.display = "block";
+    document.getElementById("logdown2").style.display = "none";
+    document.getElementById("mainntn").style.display = "none";
+    document.getElementById("mainntn2").style.display = "block";
+        return a=1 ;
+    }  else 
+    {
+    document.getElementById("hey13").style.display = "block";
+    document.getElementById("hey12").style.display = "block";
+    document.getElementById("loginhead").style.display = "block";
+    document.getElementById("loginhead2").style.display = "none";
+    document.getElementById("logdown").style.display = "none";
+    document.getElementById("logdown2").style.display = "block";
+    document.getElementById("mainntn").style.display = "block";
+    document.getElementById("mainntn2").style.display = "none";
+        return a=0 ;
+    }
+}
+
+
+
+
+</script>  
+
+
+</body>
+
+</html>

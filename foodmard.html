@@ -1,0 +1,2307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="image/logobro.png">
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstraps.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <script src="javascript/jaqury.js"></script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/foodmard.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+<link rel="stylesheet" href="css/index.css">
+    <title>FOOD DIARIES  -  FOODMART</title>
+
+    <style>
+      .banner{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3) ) , url(image/foodmart1.jpg);
+        background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    }
+    .filterDivfood {
+
+display: none;
+}
+
+.showfood {
+display: block;
+}
+.bhidesearch {
+  display: none;
+}
+
+
+
+
+.btnfood69.activefood {
+background-color: transparent;
+color: yellow;
+}
+
+  
+  .navbar34{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar34.sticky{
+    background:  linear-gradient( rgba(0, 0, 0, 0.921),rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.3)) ;
+    padding: 15px 0;
+    height: 90px;
+    z-index: 4;
+  }
+
+  .navbar34.sticky .logo img{
+      width: 90px;
+      height: 90px;
+      transition: 0.5s;
+  }
+  .navbar34.sticky .menu-list li a {
+    font-size: 15px;
+-webkit-text-stroke: 0.4px black;
+text-shadow: 2px 2px 10px rgb(0, 0, 0);
+padding: 0 8px;
+  }
+  .navbar34.sticky .menu-list{
+    margin-top: 53px;
+    
+  }
+  .navbar34.sticky  button{
+    font-size: 11px;
+  }
+
+  .navbar34.sticky #search-icon {
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+ 
+  .navbar34.sticky #shopping{
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+
+  .navbar34.sticky #user{
+    color:var(--main-color);
+    background: #1c1d217c;
+    font-size: 17px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.342);
+  }
+
+
+
+  .navbar34 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar34 .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+
+  .navbar34 .menu-list{
+    display: inline-flex;
+    margin-top: 43px;
+ 
+    
+    
+  }
+  .menu-list li{
+    list-style: none;
+    margin-top: -24px;
+
+  }
+  
+  .menu-list li a:hover{
+    color: var(--main-color);
+  }
+  
+  @media (max-width: 1024px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar34 .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 55%;
+      max-width: 700px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: var(--body-bg);
+      transition: all 0.3s ease;
+    }
+    .navbar34.show .menu-list{
+      left: 0%;
+      display: grid;
+    }
+    .navbar34 .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar34 .menu-list li a{
+      font-size: 18px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar34.show .menu-list li a{
+      margin-left: 0px;
+    }
+
+    .navbar34 .menu-list .dropdown-toggle{
+      font-size: 18px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      margin-top: 45px;
+      margin-bottom: -40px;
+
+    }
+    .navbar34.show .menu-list .dropdown-toggle{
+      margin-left: 0px;
+    }
+  
+    .navbar34.show .menu-list .dropdown-item{
+      width: 80%;
+    }
+
+     .dropdown-menu{
+      background: black;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar34 .logo a{
+      font-size: 27px;
+    }
+  }
+
+
+
+
+
+
+.popup2 .contentfoodmard {
+    position: fixed;
+    bottom: 72px;
+    right: -192px;
+    transform: translate(50%, 50%) scale(0);
+    background: black;
+    width: 340px;
+    height: 90px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 634;
+    border: 1px solid rgb(45, 45, 45);
+}
+
+.popup2 .close-foodmard-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius:50% ;
+}
+
+.popup2.activefoodmard .overlay{
+    display: block;
+}
+
+.popup2.activefoodmard .contentfoodmard{
+    transition: all 300ms ease-in-out;
+    bottom: 72px;
+    right: 192px;
+    transform: translate(50%, 50%) scale(1);
+    z-index: 634;
+}
+
+
+@media(max-width:375px){
+  .popup2.activefoodmard .contentfoodmard{
+    transition: all 300ms ease-in-out;
+    bottom: 72px;
+    right: 192px;
+    transform: translate(50%, 50%) scale(.7);
+    z-index: 634;
+}
+}
+@media(max-width:327px){
+  .popup2.activefoodmard .contentfoodmard{
+    transition: all 300ms ease-in-out;
+    bottom: 72px;
+    right: 152px;
+    transform: translate(50%, 50%) scale(.7);
+    z-index: 634;
+}
+}
+.tontona4:hover{
+  background: transparent;
+  color: var(--main-color);
+}
+.navbar34.sticky .tontona4{
+  font-size: 15px;
+}
+.tontona4{
+  background: transparent;color: #fff; transform:translateY(-24px)translateX(12px)  ; padding: 0px 20px; font-size:16px ;   font-family: 'Libre Baskerville', serif;
+          -webkit-text-stroke: .2px black;
+          text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+    </style>
+
+
+
+
+
+  </head>
+  <body>
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+<header>
+  <nav class="navbar34">
+    <div class="content">
+      <a href="index.html">
+        <div class="logo">
+          <img src="image/logobro.png" alt="">
+        </div>
+    </a>
+      <ul class="menu-list" style=" top: -44px;">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times" ></i>
+        </div>
+    
+        <li><a href="index.html" >HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="adout.html">ABOUT US</a></li>
+        <li><a href="chef.html">CHEFS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle tontona4" type="button" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            RESTUARANT
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="foodmard.html" style="background: var(--main-color);">FOOD MART</a>
+            <a class="dropdown-item" href="blog.html">BLOGS</a>
+            <a class="dropdown-item" href="recipies.html">RECIPIES</a>
+            <a class="dropdown-item" href="tablebook.html">BOOK A TABLE</a>
+            <a class="dropdown-item" href="reviews.html">REVIEWS</a>
+          </div>
+        </div>
+        <li ><a href="contact.html" >CONTACT</a></li>
+      </ul>
+      <div class="icons">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <i class="fas fa-search" id="search-icon"></i>
+        <div class="line"></div>
+        <a href="contact.html" class="fas fa-phone" id="shopping"></a>
+        <div class="line"></div>
+        <a id="user" class="fas fa-user" onclick="toggleMenu(),initClock()"></a>
+    </div>
+    </div>
+   
+  
+    
+    <!-- <div class="profile-images-card">
+      <div class="profile-images" id="pic1">
+        <img src="image/profile.png"  id="upload-img" onclick="toggleMenu()">
+      </div>
+      <div class="custom-file">
+        <input type="file" id="fileupload">
+      </div>
+    </div> -->
+  
+    <div class="sub-menu-wrap" id="subMenu">
+
+
+      <div class="sub-menu">
+  
+  
+        <div class="user-info" style="width: 57px;">
+  
+  
+     
+          <div class="profile-images-card">
+           
+             <div class="profile-images" id="pic2" style="margin-left: 6px; width: 60px; height: 60px;">
+           
+               <img src="image/profile.png" id="upload-img" onclick="toggleMenu()">
+                
+        </div>
+                   
+     
+                   <div class="custom-file" style="  margin-left: 10px;
+         transform: translateY(20px);">
+         
+                 <!-- <label for="fileupload">Upload Profile</label> -->
+             
+             <input type="file" id="fileupload">
+             
+           </div>
+             
+         </div>
+         <div style="position: relative;float: right;text-align: center;/*! margin-left: 33px; *//*! padding-right: 11px; */">
+          <h2 style="position: relative;margin-left: 9px;height: 31px;;text-align: center;">
+  
+            <span id="result-name" style="font-size: 36px;font-weight: 500;letter-spacing: 1px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"></span>
+          </h2>
+      
+          <h2 style="text-align:center;margin-left: 8px;">
+            <span id="result-email" style="font-size:13px;"></span>
+          </h2>
+      </div>
+         </div>
+        <hr style="margin-top: 18px;"> 
+  
+        <a href="#" class="sub-menu-links">
+          <img src="image/sprofile.png" >
+          <p><label for="fileupload" id="upload" class="uploadop">Upload Profile <i class="bi bi-cloud-plus" style="font-size:26px; margin-left: 38px;"></i></label></p>
+    
+        </a>
+        
+        <a href="#" class="sub-menu-links">
+          <img src="image/Project_21-removebg-preview.png" height="43px" style="width: 58px;" width="44px">
+          <p style=" transform: translateX(-1px);" >Visitors</p>
+  
+          <div class="website-counter" style="font-size: 16px;color: var(--hover-color);transform: translate(-12px,-4px);font-family: initial;font-weight: bolder;"> </div>
+         
+        </a>
+   
+        <a href="#" class="sub-menu-links">
+          <img src="image/Project_20_1_-removebg-preview.png" height="40px">
+          <p >Time</p>    
+          <div class="website-counter" style="font-size: 16px;color: var(--hover-color);transform: translate(-5px,-4px);font-family: initial;font-weight: bolder;"></div>
+           
+              
+        </a>
+        <div class="datetime" style="margin-bottom: -95px;">
+          <div class="date">
+              <span id="dayname">Day</span>,
+              <span id="month">Month</span>,
+              <span id="daynum">00</span>,
+              <span id="year">Year</span>,
+          </div>
+          <div class="time">
+              <span id="hour">00</span><span style="font-size: 20px; transform: translateY(-4px);">:</span>
+              <span id="minutes">00</span><span style="font-size: 20px; transform: translateY(-4px);">:</span>
+              <span id="second">00</span>
+              <span id="period" >AM</span>
+          </div>   
+      
+        </div>
+        <a  class="sub-menu-links">
+          <img src="dammoimage/Project_26_1_-removebg-preview.png" >
+          <p>Change Theme<label class="darkswitch">
+            <i class="bi bi-arrow-down-square-fill" style="font-size:26px;"  onclick="themeopen()"></i>
+           
+          </label></p>
+        
+        </a> 
+  
+       <a href="login.html" class="sub-menu-links">
+          <img src="image/logout.png" >
+          <p >Logout <i class="bi bi-box-arrow-left" style="font-size:26px; margin-left: 96px;"></i></p>
+        
+        </a> 
+        
+     
+  
+        
+  
+  
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  </header>
+ 
+
+
+
+
+<div class="banner" id="foodwalabnner">
+  <div class="contenttextbannerbro" id="foodwalatext" style="z-index: 0;">
+    <h2>FOODMART</h2>
+    <h2>FOODMART</h2>
+  </div>
+  <div class="animationjomastiaahh5">
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+    <div>  </div>
+  </div>
+</div>
+
+
+<!-- _____________start_____________________________________________________________________________________________________ -->
+
+
+<div class="nav-img10">
+  <img class="img1bro a2" src="image/nav-1.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro a3" src="image/nav-2.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro a4" src="image/nav-3.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro a5" src="image/nav-4.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro a6" src="image/nav-5.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro a7" src="image/nav-6.png" style="margin-right: 10px;" height="160px">
+  <img class="img1bro a8" src="image/nav-7.png" style="margin-right: 10px;" height="160px">
+
+
+
+</div>
+<!-- _____________circle-image_____________________________________________________________________________________________________ -->
+<br><br>
+<br><br>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+<br><br><br><br><br>
+
+<form action="" class="seeeeeeee" id="gammmmeee">
+  <input type="text" required name="" class="gammmmmm"id="search-items"  onkeyup="searchs()" placeholder="Search Here...">
+  <i class="fa fa-search" id="seaaaaa"></i>
+  <a href="javascript:void(0)" id="clear-btn" >Clear</a>
+</form>
+
+
+
+
+<div id="mybtnfood69Containerfood" class="gammmega" data-aos="zoom-in">
+<button class="custosm-btn btn-6 btnfood69 activefood" onclick="filterSelection('allfood')" ><span>ALL</span></button>
+<button class="custosm-btn btn-6 btnfood69" onclick="filterSelection('vegetables')"><span>VEGETABLES</span></button>
+<button class="custosm-btn btn-6 btnfood69" onclick="filterSelection('fruits')"><span>FRUITS</span></button>
+<button class="custosm-btn btn-6 btnfood69" onclick="filterSelection('staples')"><span>STAPLES</span></button>
+<button class="custosm-btn btn-6 btnfood69" onclick="filterSelection('meat')"><span>MEATS</span></button>
+<button class="custosm-btn btn-6 btnfood69" onclick="filterSelection('snacks')"><span>SNACKS</span></button>
+<button class="custosm-btn btn-6 btnfood69" onclick="filterSelection('bakeryspreads')"><span >BAKERY SPREAD</span></button>
+
+</div>
+
+
+
+
+
+<section class="productfoodmard" id="productfoodmard">
+
+
+
+    <div class="boxmard-containermard objectfood" data-aos="fade-up">
+
+
+
+
+      
+      <div class="boxmard filterDivfood snacks">
+        <img src="image/lays.png" alt="">
+        <h3>LAYS</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+        </div>
+        <div class="pricemard"> <span>$1.10</span> $2.30 </div>
+        <div class="iconsmard">
+            <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="boxmard filterDivfood snacks">
+      <img src="image/kurleez.png" alt="">
+      <h3>KURLEEZ</h3>
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+      </div>
+      <div class="pricemard"> <span>$2.10</span> $3.30 </div>
+      <div class="iconsmard">
+          <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+    </div>
+  <div class="boxmard filterDivfood snacks">
+    <img src="image/kurkure.png" alt="">
+    <h3>KURKURE</h3>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+    </div>
+    <div class="pricemard"> <span>$5.10</span> $6.30 </div>
+    <div class="iconsmard">
+        <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+  </div>
+<div class="boxmard filterDivfood snacks">
+  <img src="image/potatosticks.png" alt="">
+  <h3>POTATOSTICKS</h3>
+  <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>
+  </div>
+  <div class="pricemard"> <span>$0.10</span> $1.30 </div>
+  <div class="iconsmard">
+      <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-share"></a>
+  </div>
+</div>
+<div class="boxmard filterDivfood snacks">
+  <img src="image/DORITOES.png" alt="">
+  <h3>DORITOES</h3>
+  <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>
+  </div>
+  <div class="pricemard"> <span>$5.0</span> $3.30 </div>
+  <div class="iconsmard">
+      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-share"></a>
+  </div>
+  </div>
+  <div class="boxmard filterDivfood snacks">
+    <img src="image/CHEE2.png" alt="">
+    <h3>CHETOOS</h3>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+    </div>
+    <div class="pricemard"> <span>$6.0</span> $6.30 </div>
+    <div class="iconsmard">
+        <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+    </div>
+<div class="boxmard filterDivfood snacks">
+<img src="image/fryo.png" alt="">
+<h3>FRYO</h3>
+<div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half"></i>
+</div>
+<div class="pricemard"> <span>$0.20</span> $0.60 </div>
+<div class="iconsmard">
+    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-eye"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-share"></a>
+</div>
+</div>
+<div class="boxmard filterDivfood snacks">
+  <img src="image/slanty.png" alt="">
+  <h3>SLANTY</h3>
+  <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>
+  </div>
+  <div class="pricemard"> <span>$1.50</span> $2.30 </div>
+  <div class="iconsmard">
+      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-share"></a>
+  </div>
+  </div>
+
+  <div class="boxmard filterDivfood snacks">
+    <img src="image/CHESTERS.png" alt="">
+    <h3>CHESTERS</h3>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+    </div>
+    <div class="pricemard"> <span>$6.0</span> $9.30 </div>
+    <div class="iconsmard">
+        <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+    </div>
+     
+        <div class="boxmard filterDivfood snacks">
+          <img src="image/MUNCHIES.png" alt="">
+          <h3>MUNCHIES</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+          </div>
+          <div class="pricemard"> <span>$6.0</span> $9.30 </div>
+          <div class="iconsmard">
+              <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+          </div>
+          </div>
+          <div class="boxmard filterDivfood snacks">
+            <img src="image/CHOCOLATECHIP.png" alt="">
+            <h3>CHOCOLATE CHIPS</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$1.0</span> $2.30 </div>
+            <div class="iconsmard">
+                <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            </div>
+          <div class="boxmard filterDivfood snacks">
+            <img src="image/SNICKERS.png" alt="">
+            <h3>SNICKERS</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$6.0</span> $9.30 </div>
+            <div class="iconsmard">
+                <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            </div>
+
+
+
+            <div class="boxmard filterDivfood bakeryspreads">
+              <img src="menu-img/1ST.png" alt="">
+              <h3>CHICKEN SPREAD</h3>
+
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+              </div>
+              <div class="pricemard"> <span>$1.10</span> $7.00  ... 20GRAM </div>
+              <div class="iconsmard">
+                  <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+              </div>
+
+
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/maska.png" alt="">
+                <h3>MASKA</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $2.00 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+
+                
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/honey.png" alt="">
+                <h3>HONEY</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $9.00 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+
+                         
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/schoolbun-picTURE-1.png" alt="">
+                <h3>SCHOOL BUN</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $0.8 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()"class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+
+                               
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/mumtaz tab.png" alt="">
+                <h3>MUMTAZ</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $9.80 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+
+         
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/8961101819866-removebg-preview.png" alt="">
+                <h3>DAWN BUN</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> 5.00 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+                                   
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/CHICKENSPREAD.png" alt="">
+                <h3>YOUNG CHICKEN</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $5.80 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+                                   
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/bella tub.png" alt="">
+                <h3>BELLA TUB</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $2.50 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()"class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+
+                                   
+              <div class="boxmard filterDivfood bakeryspreads">
+                <img src="menu-img/mumtaz tab.png" alt="">
+                <h3>MUMTAZ</h3>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$1.10</span> $9.80 </div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+
+
+
+
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/sunridge white chakki atta.png" alt="">
+                  <h3>WHITE CHAKKI ATTA </h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $104.50  ... 5KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+
+                  
+
+
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/golden-chakki.png" alt="">
+                  <h3>GOLDEN CHAKKI ATTA </h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $24.50  ... 5KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+
+
+                  
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/suji.png" alt="">
+                  <h3>SUJI </h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $4.50  ... 1GRAM </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+                                
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/asrafi atta.png" alt="">
+                  <h3>ASHRAFI ATTA </h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $34.50  ... 5KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()"  class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+                                           
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/maida.png" alt="">
+                  <h3>MAIDA </h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $84.50  ... 1KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+                                              
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/23.png" alt="">
+                  <h3>RED LEBEL </h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $4.50  ... 0.5KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+
+                                                   
+                <div class="boxmard filterDivfood staples">
+                  <img src="menu-img/24.png" alt="">
+                  <h3>DALDA</h3>
+
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$1.10</span> $4.50  ... 0.5KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+
+                  <div class="boxmard filterDivfood staples">
+                    <img src="menu-img/25.png" alt="">
+                    <h3>CHARGA MASALA</h3>
+  
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <div class="pricemard"> <span>$1.10</span> $4.50  ... 10GRAM </div>
+                    <div class="iconsmard">
+                        <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    </div>
+
+
+                    <div class="boxmard filterDivfood staples">
+                      <img src="menu-img/26.png" alt="">
+                      <h3>CHAAT MASALA</h3>
+    
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                      <div class="pricemard"> <span>$1.10</span> $8.50  ... 10GRAM </div>
+                      <div class="iconsmard">
+                          <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                      </div>
+                      
+                    <div class="boxmard filterDivfood staples">
+                      <img src="menu-img/27.png" alt="">
+                      <h3>FISH MASALA</h3>
+    
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                      <div class="pricemard"> <span>$1.10</span> $3.20  ... 10GRAM </div>
+                      <div class="iconsmard">
+                          <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                      </div>
+                             
+                    <div class="boxmard filterDivfood staples">
+                      <img src="menu-img/28.png" alt="">
+                      <h3>RED KIDNEY BEANS</h3>
+    
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                      <div class="pricemard"> <span>$1.10</span> $8.00  ... 20GRAM </div>
+                      <div class="iconsmard">
+                          <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                      </div>
+                                   
+                    <div class="boxmard filterDivfood staples">
+                      <img src="menu-img/Plain-Bread-PNG-1.png" alt="">
+                      <h3>PLAIN BREAD</h3>
+    
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                      <div class="pricemard"> <span>$1.10</span> $5.00   </div>
+                      <div class="iconsmard">
+                          <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                      </div>
+
+
+
+        <div class="boxmard filterDivfood fruits" id="gayadjomasti">
+            <img src="image/orange.png" alt="">
+            <h3>ORANGE</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+            <div class="iconsmard">
+                <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+                <a  class="fas fa-eye" onclick="displaygayab()"></a>
+                <a  class="fas fa-heart" id="hasheart" onclick="displayrangebarangi()"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="boxmard filterDivfood fruits">
+          <img src="image/banana.png" alt="">
+          <h3>BANANA</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+          </div>
+          <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+          <div class="iconsmard">
+              <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+       
+        <div class="boxmard filterDivfood fruits">
+            <img src="image/apple-removebg-preview.png" alt="">
+            <h3>APPLE</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+            <div class="iconsmard">
+                <a class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="boxmard filterDivfood fruits">
+            <img src="image/graphes.png" alt="">
+            <h3>GRAPHES</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+            <div class="iconsmard">
+                <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="boxmard filterDivfood fruits">
+            <img src="image/mango.png" alt="">
+            <h3>MANGO</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+            <div class="iconsmard">
+                <a class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+        </div>
+        <div class="boxmard filterDivfood fruits">
+          <img src="image/strawberryjo.png" alt="">
+          <h3>STRAWBERRY</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+          </div>
+          <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+          <div class="iconsmard">
+              <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+          </div>
+        </div>
+        <div class="boxmard filterDivfood fruits">
+          <img src="image/pine.png" alt="">
+          <h3>PINE-APPLE</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+          </div>
+          <div class="pricemard"> <span>$15.10</span> $12.30 </div>
+          <div class="iconsmard">
+              <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+          </div>
+      </div>
+      <div class="boxmard filterDivfood fruits">
+        <img src="image/avocado.png" alt="">
+        <h3>AVOCADO</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+        </div>
+        <div class="pricemard"> <span>$15.10</span> $42.0 1GRAM</div>
+        <div class="iconsmard">
+            <a class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+    </div>
+    <div class="boxmard filterDivfood fruits">
+      <img src="image/limes-lime-slice-isolated-white-limes-lime-slice-isolated-white-png-image-transparent-background-137010708-removebg-preview.png" alt="">
+      <h3>LIME</h3>
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+      </div>
+      <div class="pricemard"> <span>$19.10</span> $8.10 1GRAM</div>
+      <div class="iconsmard">
+          <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-share"></a>
+      </div>
+  </div>
+  <div class="boxmard filterDivfood fruits">
+    <img src="image/papaya.png" alt="">
+    <h3>PAPAYA</h3>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+    </div>
+    <div class="pricemard"> <span>$34.10</span> $2.80 1GRAM</div>
+    <div class="iconsmard">
+        <a  class="fas fa-shopping-cart"onclick="togglePopupfoodmard()"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-share"></a>
+    </div>
+</div>
+<div class="boxmard filterDivfood fruits">
+  <img src="image/chochonut.png" alt="">
+  <h3>CHOCHONUT</h3>
+  <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>
+  </div>
+  <div class="pricemard"> <span>$7.10</span> $4.4 1GRAM</div>
+  <div class="iconsmard">
+      <a  class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-share"></a>
+  </div>
+</div>
+<div class="boxmard filterDivfood fruits">
+  <img src="image/KIWI.png" alt="">
+  <h3>KIWI</h3>
+  <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half"></i>
+  </div>
+  <div class="pricemard"> <span>$8.10</span> $2.8 1GRAM</div>
+  <div class="iconsmard">
+      <a class="fas fa-shopping-cart" onclick="togglePopupfoodmard()"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-share"></a>
+  </div>
+</div>
+
+           
+            
+
+      <div class="boxmard filterDivfood vegetables">
+        <img src="image/GOBI.png" alt="">
+        <h3>GOOBI</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+        </div>
+        <div class="pricemard"> <span>$15.10</span> $12.30 1KG </div>
+        <div class="iconsmard">
+            <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+        </div>
+        </div>
+        <div class="boxmard filterDivfood vegetables">
+          <img src="image/BHINDI.png" alt="">
+          <h3>BHINDI</h3>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+          </div>
+          <div class="pricemard"> <span>$1.10</span> $12.30  1KG</div>
+          <div class="iconsmard">
+              <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+          </div>
+          </div>
+          <div class="boxmard filterDivfood vegetables">
+            <img src="image/CARROT.png" alt="">
+            <h3>CARROT</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+            </div>
+            <div class="pricemard"> <span>$15.10</span> $16.30 1KG</div>
+            <div class="iconsmard">
+                <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+            </div>
+            </div>
+            <div class="boxmard filterDivfood vegetables">
+              <img src="image/POTATO.png" alt="">
+              <h3>POTATO</h3>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half"></i>
+              </div>
+              <div class="pricemard"> <span>$15.10</span> $7.90 1KG </div>
+              <div class="iconsmard">
+                  <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+              </div>
+              <div class="boxmard filterDivfood vegetables">
+                <img src="image/TOMATO.png" alt="">
+                <h3>TOMATO</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <div class="pricemard"> <span>$5.10</span> $2.30 1KG</div>
+                <div class="iconsmard">
+                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                </div>
+                <div class="boxmard filterDivfood vegetables">
+                  <img src="image/KARELA.png" alt="">
+                  <h3>KARELA</h3>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half"></i>
+                  </div>
+                  <div class="pricemard"> <span>$55.10</span> $8.30 1KG </div>
+                  <div class="iconsmard">
+                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                      <a href="#" class="fas fa-eye"></a>
+                      <a href="#" class="fas fa-heart"></a>
+                      <a href="#" class="fas fa-share"></a>
+                  </div>
+                  </div>
+                  <div class="boxmard filterDivfood vegetables">
+                    <img src="image/BRINJAL.png" alt="">
+                    <h3>LOKI</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <div class="pricemard"> <span>$1.10</span> $0.90 1KG </div>
+                    <div class="iconsmard">
+                        <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                    </div>
+                    <div class="boxmard filterDivfood vegetables">
+                      <img src="image/SHIMLAMIRCH.png" alt="">
+                      <h3>SHIMLA-MIRCH</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                      <div class="pricemard"> <span>$14.10</span> $3.60 1KG </div>
+                      <div class="iconsmard">
+                          <a onclick="togglePopupfoodmard()"class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                      </div>
+                    <div class="boxmard filterDivfood vegetables">
+                      <img src="image/ADRAK.png" alt="">
+                      <h3>ADRAK</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                      </div>
+                      <div class="pricemard"> <span>$4.10</span> $6.90 1KG </div>
+                      <div class="iconsmard">
+                          <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                      </div>
+                      <div class="boxmard filterDivfood vegetables">
+                        <img src="image/TORAI.png" alt="">
+                        <h3>TORAI</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <div class="pricemard"> <span>$15.10</span> $3.90 1KG </div>
+                        <div class="iconsmard">
+                            <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        </div>
+                        <div class="boxmard filterDivfood vegetables">
+                          <img src="image/CORN.png" alt="">
+                          <h3>CORN</h3>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half"></i>
+                          </div>
+                          <div class="pricemard"> <span>$5.10</span> $6.60 1KG </div>
+                          <div class="iconsmard">
+                              <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                              <a href="#" class="fas fa-eye"></a>
+                              <a href="#" class="fas fa-heart"></a>
+                              <a href="#" class="fas fa-share"></a>
+                          </div>
+                          </div>
+                          <div class="boxmard filterDivfood vegetables">
+                            <img src="image/PUMPKIN.png" alt="">
+                            <h3>PUMPKIN</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="pricemard"> <span>$8.10</span> $3.60 1KG </div>
+                            <div class="iconsmard">
+                                <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                            </div>
+
+                          
+                      <div class="boxmard filterDivfood meat">
+                        <img src="image/chicken-removebg-preview.png" alt="">
+                        <h3>CHICKEN</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <div class="pricemard"> <span>$15.10</span> $4.90 1GRAM </div>
+                        <div class="iconsmard">
+                            <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                        </div>
+                        <div class="boxmard filterDivfood meat">
+                          <img src="image/beef-removebg-preview.png" alt="">
+                          <h3>BEEF</h3>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half"></i>
+                          </div>
+                          <div class="pricemard"> <span>$15.10</span> $2.80 1GRAM </div>
+                          <div class="iconsmard">
+                              <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                              <a href="#" class="fas fa-eye"></a>
+                              <a href="#" class="fas fa-heart"></a>
+                              <a href="#" class="fas fa-share"></a>
+                          </div>
+                          </div>
+                          <div class="boxmard filterDivfood meat">
+                            <img src="image/austrage-removebg-preview.png" alt="">
+                            <h3>AUSTRAGE</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="pricemard"> <span>$15.10</span> $6.50 1GRAM </div>
+                            <div class="iconsmard">
+                                <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                <a href="#" class="fas fa-eye"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                            </div>
+                            <div class="boxmard filterDivfood meat">
+                              <img src="image/CAMEL.png" alt="">
+                              <h3>CAMEL-MEAT</h3>
+                              <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half"></i>
+                              </div>
+                              <div class="pricemard"> <span>$15.10</span> $6.80 1GRAM </div>
+                              <div class="iconsmard">
+                                  <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                  <a href="#" class="fas fa-eye"></a>
+                                  <a href="#" class="fas fa-heart"></a>
+                                  <a href="#" class="fas fa-share"></a>
+                              </div>
+                              </div>
+                              <div class="boxmard filterDivfood meat">
+                                <img src="image/MUTTON.png" alt="">
+                                <h3>MUTTON</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
+                                </div>
+                                <div class="pricemard"> <span>$15.10</span> $2.50 1GRAM </div>
+                                <div class="iconsmard">
+                                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                    <a href="#" class="fas fa-eye"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                                </div>
+                                <div class="boxmard filterDivfood meat">
+                                  <img src="image/RABBIT.png" alt="">
+                                  <h3>RABBIT-MEAT</h3>
+                                  <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star-half"></i>
+                                  </div>
+                                  <div class="pricemard"> <span>$5.10</span> $9.50 1GRAM </div>
+                                  <div class="iconsmard">
+                                      <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                      <a href="#" class="fas fa-eye"></a>
+                                      <a href="#" class="fas fa-heart"></a>
+                                      <a href="#" class="fas fa-share"></a>
+                                  </div>
+                                  </div>
+                                  <div class="boxmard filterDivfood meat">
+                                    <img src="image/DUCK.png" alt="">
+                                    <h3>DUCK-MEAT</h3>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half"></i>
+                                    </div>
+                                    <div class="pricemard"> <span>$8.10</span> $6.50 1GRAM </div>
+                                    <div class="iconsmard">
+                                        <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                        <a href="#" class="fas fa-eye"></a>
+                                        <a href="#" class="fas fa-heart"></a>
+                                        <a href="#" class="fas fa-share"></a>
+                                    </div>
+                                    </div>
+                                    <div class="boxmard filterDivfood meat">
+                                      <img src="image/PORK.png" alt="">
+                                      <h3>PORK</h3>
+                    
+                                      <div class="stars">
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star-half"></i>
+                                      </div>
+                                      <div class="pricemard"> <span>$1.10</span> $12.50 1GRAM </div>
+                                      <div class="iconsmard">
+                                          <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                          <a href="#" class="fas fa-eye"></a>
+                                          <a href="#" class="fas fa-heart"></a>
+                                          <a href="#" class="fas fa-share"></a>
+                                      </div>
+                                      </div>
+
+
+                                      <div class="boxmard filterDivfood meat">
+                                        <img src="image/LAMP.png" alt="">
+                                        <h3>LAMP</h3>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half"></i>
+                                        </div>
+                                        <div class="pricemard"> <span>$5.10</span> $9.50 1GRAM </div>
+                                        <div class="iconsmard">
+                                            <a href="#" class="fas fa-shopping-cart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-share"></a>
+                                        </div>
+                                        </div>
+                                        <div class="boxmard filterDivfood meat">
+                                          <img src="image/DEER.png" alt="">
+                                          <h3>DEER</h3>
+                                          <div class="stars">
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star"></i>
+                                              <i class="fas fa-star-half"></i>
+                                          </div>
+                                          <div class="pricemard"> <span>$7.10</span> $2.50 1GRAM </div>
+                                          <div class="iconsmard">
+                                              <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                              <a href="#" class="fas fa-eye"></a>
+                                              <a href="#" class="fas fa-heart"></a>
+                                              <a href="#" class="fas fa-share"></a>
+                                          </div>
+                                          </div>
+                                          <div class="boxmard filterDivfood meat" style="display: none;">
+                                            <img src="image/GOAT.png" alt="">
+                                            <h3>GOAT</h3>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half"></i>
+                                            </div>
+                                            <div class="pricemard"> <span>$100.00</span> $1000.00 1GRAM </div>
+                                            <div class="iconsmard">
+                                                <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                                <a href="#" class="fas fa-eye"></a>
+                                                <a href="#" class="fas fa-heart"></a>
+                                                <a href="#" class="fas fa-share"></a>
+                                            </div>
+                                            </div>
+                                            <div class="boxmard filterDivfood meat">
+                                              <img src="image/PORK.png" alt="">
+                                              <h3>PORK</h3>
+                            
+                                              <div class="stars">
+                                                  <i class="fas fa-star"></i>
+                                                  <i class="fas fa-star"></i>
+                                                  <i class="fas fa-star"></i>
+                                                  <i class="fas fa-star"></i>
+                                                  <i class="fas fa-star-half"></i>
+                                              </div>
+                                              <div class="pricemard"> <span>$1.10</span> $12.50 1GRAM </div>
+                                              <div class="iconsmard">
+                                                  <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                                  <a href="#" class="fas fa-eye"></a>
+                                                  <a href="#" class="fas fa-heart"></a>
+                                                  <a href="#" class="fas fa-share"></a>
+                                              </div>
+                                              </div>
+                                              <div class="boxmard filterDivfood meat">
+                                                <img src="image/LAMPMUTTON.png" alt="">
+                                                <h3>LAMP-MUTTON</h3>
+                              
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half"></i>
+                                                </div>
+                                                <div class="pricemard"> <span>$1.10</span> $14.50 1GRAM </div>
+                                                <div class="iconsmard">
+                                                    <a onclick="togglePopupfoodmard()" class="fas fa-shopping-cart"></a>
+                                                    <a href="#" class="fas fa-eye"></a>
+                                                    <a href="#" class="fas fa-heart"></a>
+                                                    <a href="#" class="fas fa-share"></a>
+                                                </div>
+                                                </div>
+
+
+
+
+
+
+
+                                                  
+                             
+                             
+
+
+
+    </div>
+
+</section>
+
+<div class="changethemebtn" onclick="themeopen()">
+  <div class="gomaoo">
+    <i class="fas fa-chevron-up" style="transform:translateY(5px)translateX(5px)  rotate(90deg);"></i>
+  </div>
+</div>
+
+<div class="themepanel" id="chanasdasddsa">
+  <div class="close-theme-panel" onclick="themeclose()"><button type="button" class="btn-close "></button></div>
+  <div class="theme-panel-heading">THEME CUSTOMIZER</div>
+  <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">LIGHT BACKGROUND MODE</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square"  onclick="myFunction()">
+
+        </div>
+        <div class="themepanel-square3" onclick="myFunction1()">
+
+        </div>
+        <div class="themepanel-square2" onclick="black()">
+
+        </div>
+    </div>
+    <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">GRADIENT BACKGROUND MODE</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square4"onclick="gradientone()" >
+
+        </div>
+        <div class="themepanel-square5" onclick="gradienttwo()">
+
+        </div>
+        <div class="themepanel-square6" onclick="gradientthree()">
+
+        </div>
+        <div class="themepanel-square7" onclick="gradientfour()">
+
+        </div>
+        <div class="themepanel-square8" onclick="gradientfive()">
+
+        </div>
+        <div class="themepanel-square9" onclick="gradientsix()">
+
+        </div>
+    </div>
+    <hr class="themepanel-line">
+
+  <div class="theme-panel-heading-2">GAUSSIAN TEXTURE BACKGROUND</div>
+  <hr class="themepanel-line">
+    <div class="themepanel-square-main">
+        <div class="themepanel-square10"onclick="gradientseven()" >
+
+        </div>
+        <div class="themepanel-square11" onclick="gradienteight()">
+
+        </div>
+        <div class="themepanel-square12" onclick="gradientnine()">
+
+        </div>
+        <div class="themepanel-square13" onclick="gradientten()">
+
+        </div>
+        <div class="themepanel-square14" onclick="gradienteleven()">
+
+        </div>
+        <div class="themepanel-square15" onclick="gradienttwelve()">
+
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+<!-- _______________________________________________________________________________________________________________ -->
+<br><br><br><br><br>
+    <div class="popup2" id="popup1222">
+      <div class=""></div>
+      <div class="contentfoodmard">
+      <div class="close-foodmard-btn"onclick="togglePopupfoodmard()">&times;</div>
+      <h1 style="color: rgb(255, 255, 255); font-weight: 500; font-family: poppins , sans-serif;">ADD-TO-CART</h1>
+      <p style="color: RED; font-size: 12px;">Sorry this Funtion Can't Available On This Page</p>
+    </div>
+    </div>
+<script>
+ 
+  function togglePopupfoodmard(){
+
+   // document.getElementById("popup1222").style.transform = "scale(1)";
+   document.getElementById("popup1222").style.display = "block";
+      document.getElementById("popup1222").classList.toggle("activefoodmard");
+    
+   setTimeout(() =>{
+    //document.getElementById("popup1222").style.transform = "scale(0)";
+    document.getElementById("popup1222").style.display = "none";
+   },7000);
+
+
+   
+  }
+</script>
+
+
+<div class="slid43 container">
+  <div class="slidsd">
+
+      <div class="sli34">
+          <img src="image/slider1bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide2bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide3bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide4bro.png" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide5bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide7bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide8bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide9bro.jpg" alt=""></div>
+      <div class="sli34">
+          <img src="image/slide10bro.jpg" alt=""></div>
+
+          <div class="sli34">
+            <img src="image/slider1bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide2bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide3bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide4bro.png" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide5bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide7bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide8bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide9bro.jpg" alt=""></div>
+        <div class="sli34">
+            <img src="image/slide10bro.jpg" alt=""></div>
+
+  </div>
+</div>
+
+<div class="footerimgbro9" style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6) ) , url(image/hel.jpg); background-size: cover;">
+  <footer class="footer" style="background: transparent;"  >
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Restuarant</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="foodmard.html">Food-Mart</a></li>
+            <li><a href="chef.html">Chefs</a></li>
+            <li><a href="recipies.html">Recipies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="foodmard.html">Food</a></li>
+            <li><a href="foodmard.html">Bakery-item</a></li>
+            <li><a href="menu.html">Menu-items</a></li>
+            <li><a href="recipies.html">Restuarant</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://twitter.com/login"><i class="fab fa-twitter" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 20px; transform: translateY(3px);"></i></a>
+            <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin-in" style="font-size: 20px; transform: translateY(3px);"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="cpy-right text-center py-4" style="border-top: .3px solid rgb(97, 97, 97); background: transparent;">
+    <p style="font-size: 15px; letter-spacing: 5px;">© 2022 Food Diaries. All rights reserved | Design by <a href="https://www.facebook.com/AptechNorthKhi/" style="color: white;"> Abdullah , ali , haseeb</a> </p>
+    </div>
+</div>
+
+<a href="#" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+<div class="boxyou" id="boxxc" style="display: none;">
+
+
+  <div class="popup-teen" id="teenfirstad">
+    <div class="contentBox-teen" >
+      <div class="closepopop-old" onclick="teengayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/teenage-ad-removebg-preview.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>SPECIAL OFFER FOR TEENAGERS</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- __________________________________________________________________________________________________________________ -->
+
+
+  <div class="popop-young" id="teenfirstad2">
+    <div class="contentBox-young" >
+      <div class="closepopop-old" onclick="younggayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/young-addd.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>OFFERS FOR YOUNGSTER IN FAST FOOD</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="popop-old" id="teenfirstadasd3">
+    <div class="contentBox-old" >
+        <div class="closepopop-old" onclick="adoldgayad()"><i class="fas fa-close"></i></div>
+        <div class="imgBx" >
+      <img src="dammoimage/OLD-AD.png" >
+        </div>
+        <div class="content">
+          <div>
+              <h3>OFFERS FOR OLD (WOMANS/MANS)</h3>
+          <h2>30% Off</h2> 
+          <p>Go To Menu Page in and get 30% off discount.</p>
+          <a href="menu.html">Get The Deal</a>
+          </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="popop-everyone" id="teenfirstadasd4">
+
+    <div class="closepopop-everyone" onclick="adeverygayad()"><i class="fas fa-close"></i></div>
+    <div class="imag-ad-four">
+      <img src="dammoimage/Poster1.png" alt="">
+    </div>
+  </div> 
+</div>
+
+<button onclick="boxxx()" style="display: none;">clickbro</button>
+
+<script>
+  document.getElementById("boxxc").style.display = sessionStorage.getItem("aasdasdsd");
+   function boxxx() {
+   document.getElementById("boxxc").style.display = "none";
+   sessionStorage.setItem("aasdasdsd","none");
+   
+   }
+
+</script>
+
+<script>
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+if (window.pageYOffset > 100) {
+  toTop.classList.add("active");
+} else {
+  toTop.classList.remove("active");
+}
+})
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- __________________________________________________________________________________________________________________ -->
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+<script>
+  
+  const searchs = ()=>{
+      
+      const searchbox =document.getElementById("search-items").value.toUpperCase();
+      const storeitems = document.getElementById("productfoodmard")
+      const product = document.querySelectorAll(".boxmard")
+      const pname = storeitems.getElementsByTagName("h3")
+  
+      for(var i=0; i < pname.length; i++){
+          let match = product[i].getElementsByTagName('h3')[0]; 
+  
+          if(match) {
+             let textvalue = match.textContent || match.innerHTML
+  
+              if(textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                  product[i].style.display = "";
+               
+                  
+              }else{
+                  product[i].style.display = "none";
+                 
+              }
+          }
+      }
+  }
+  
+  
+  </script>
+<script>
+  window.addEventListener('load', () => {
+
+
+
+const name = sessionStorage.getItem('NAME');
+const email = sessionStorage.getItem('EMAIL');
+
+document.getElementById('result-name').innerHTML = name;
+document.getElementById('result-email').innerHTML = email;
+
+})
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({offset: 100,
+    duration:1300
+  });
+</script>
+
+<script>
+  document.querySelector('#search-icon').onclick = () =>{
+  document.querySelector('#search-form').classList.toggle('active');
+}
+
+document.querySelector('#close').onclick = () =>{
+  document.querySelector('#search-form').classList.remove('active');
+}
+</script>
+<script src="javascript/allbuttunfunction.js"></script>
+<script src="javascript/card.js"></script>
+<script src="javascript/JSON.js"></script>
+<script src="javascript/foodmard.js"></script>
+<script src="javascript/java.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
